@@ -4,7 +4,31 @@ ngrep命令是grep命令的网络版,他力求更多的grep特征,用于搜寻�
 
 ### 安装
 
+**ngrep**
 
+下载地址:http:\/\/ngrep.sourceforge.net\/
+
+**libpcap**
+
+下载地址:http:\/\/www.tcpdump.org\/
+
+先用yum install libpcap完全安装libpcap,注意有时候用libpcap安装包安装的不完整会影响ngrep的使用.
+
+如果yum无法安装,也可以make安装
+
+```
+wget http://www.tcpdump.org/release/libpcap-1.3.0.tar.gz
+tar -zxf libpcap-1.3.0.tar.gz
+cd libpcap-1.3.0
+./configure
+make && make install
+```
+
+ngrep的安装就是`configure/make/make install`三部曲.
+
+如果遇到please wipe out all unused pcap installations,可以添加一下选项:
+
+> .\/configure --with-pcap-includes=\/usr\/local\/include\/pcap
 
 ### 语法
 
