@@ -30,6 +30,8 @@ ngrep的安装就是`configure/make/make install`三部曲.
 
 > .\/configure --with-pcap-includes=\/usr\/local\/include\/pcap
 
+输入ngrep来验证下安装是否成功.
+
 ### 语法
 
 ### 选项
