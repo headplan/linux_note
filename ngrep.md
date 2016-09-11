@@ -35,7 +35,9 @@ ngrep的安装就是`configure/make/make install`三部曲.
 ### 语法
 
 ```
-
+ngrep <-LhNXViwqpevxlDtTRM> <-IO pcap_dump> <-n num> <-d dev> <-A num>
+<-s snaplen> <-S limitlen> <-w normal|byline|single|none> <-c cols>
+<-P char> <-F file>
 ```
 
 ### 选项
