@@ -7,7 +7,11 @@ yum install nmap
 brew install nmap
 ```
 
-语法
+### 语法
+
+```
+nmap(选项)(参数)
+```
 
 选项
 
