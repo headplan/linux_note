@@ -2,7 +2,10 @@
 
 ### 安装
 
-
+```
+yum install nmap
+brew install nmap
+```
 
 语法
 
