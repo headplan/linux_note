@@ -8,5 +8,15 @@ grep - global search regular expression\(RE\) and print out the line
 
 ### 常见用法
 
+在文件中搜索一个单词,没有返回代表没搜索到
+
+> grep "match\_pattern" file\_name \# 搜索文件中文本,输出当前行
+> 
+> grep "match\_pattern" file\_1 file\_2 \# 多文件搜索
+> 
+> grep -v "match\_pattern" file\_name \# -v表示输出除此之外其他内容,除了那一行,没搜到会全部输出
+> 
+> grep "match\_pattern" file\_name --color=auto \# --color=auto标记匹配颜色
+
 
 
