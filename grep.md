@@ -40,5 +40,11 @@ grep - global search regular expression\(RE\) and print out the line
 
 ### grep递归搜索文件
 
-
+> grep "match\_pattern" .\/ -r -n \# -r -n多级目录中对文本进行递归搜索
+> 
+> echo "hello world" \| grep -i "HELLO" \# -i忽略大小写匹配
+> 
+> echo this is a text line \| grep -e "is" -e "line" \# -e搜索多个匹配内容
+> 
+> echo aaa bbb ccc ddd \| grep -f match -o \# 匹配多项,还可以创建一个文件,使用-f匹配
 
