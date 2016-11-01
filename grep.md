@@ -27,4 +27,8 @@ grep - global search regular expression\(RE\) and print out the line
 > grep -c "match\_pattern" file\_name \# -c统计匹配行数,int数,记忆:count
 > 
 > grep "match\_pattern" -n file\_name \# -n返回匹配行内容+该行的行号,记忆:number
+> 
+> cat file\_name \| grep "match\_pattern" -n \# 同上
+> 
+> grep "match\_pattern" -n file\_1 file\_2 \# 多文件,同上
 
