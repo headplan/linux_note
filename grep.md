@@ -33,6 +33,6 @@ grep - global search regular expression\(RE\) and print out the line
 > grep "match\_pattern" -n file\_1 file\_2 \# 多文件,同上
 > 
 > grep -b -o "match\_pattern" file\_name \# -b -o字节偏移没有显示
-
-
+> 
+> grep -l "match\_pattern" file\_1 file\_2 \# 返回匹配的多文件中的文件名
 
