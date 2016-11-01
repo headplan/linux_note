@@ -20,5 +20,7 @@ grep - global search regular expression\(RE\) and print out the line
 > 
 > grep -E "\[1-9\]+" file\_name \# -E使用正则表达式
 > 
-> echo this is a test line. \| grep -o -E "\[a-z\]+\." \# -o只输出文件中匹配到的部分
+> echo this is a test line. \| grep -o -E "\[a-z\]+." \# -o只输出文件中匹配到的部分
+> 
+> echo this is a test line. \| egrep -o "\[a-z\]+." \# 同上
 
