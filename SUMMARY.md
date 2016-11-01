@@ -6,4 +6,6 @@
     * [ngrep](ngrep.md)
 * [网络管理](网络管理.md)
     * [nmap](nmap.md)
+* [文件和目录管理](文件和目录管理.md)
+    * [grep](grep.md)
 
