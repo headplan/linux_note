@@ -31,4 +31,8 @@ grep - global search regular expression\(RE\) and print out the line
 > cat file\_name \| grep "match\_pattern" -n \# 同上
 > 
 > grep "match\_pattern" -n file\_1 file\_2 \# 多文件,同上
+> 
+> grep -b -o "match\_pattern" file\_name \# -b -o字节偏移没有显示
+
+
 
