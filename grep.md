@@ -55,4 +55,12 @@ grep - global search regular expression\(RE\) and print out the line
 > grep "main\(\)" . -r --exclude-from filelist \# 同上,但是根据filelist文件里的列表排除
 > 
 > grep -q "match\_pattern" file\_name \# 静默输出,成功返回0,不成功返回其他.
+> 
+> seq 10 \| grep "5" -A 3 \# 匹配内容5,并显示后3行
+> 
+> seq 10 \| grep "5" -B 3 \# 匹配内容5,并显示前3行
+> 
+> seq 10 \| grep "5" -C 3 \# 匹配内容5,并显示前后3行
+
+
 
