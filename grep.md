@@ -36,3 +36,9 @@ grep - global search regular expression\(RE\) and print out the line
 > 
 > grep -l "match\_pattern" file\_1 file\_2 \# 返回匹配的多文件中的文件名
 
+上面的都是指定文件名file\_name的.
+
+### grep递归搜索文件
+
+
+
