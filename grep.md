@@ -47,4 +47,12 @@ grep - global search regular expression\(RE\) and print out the line
 > echo this is a text line \| grep -e "is" -e "line" \# -e搜索多个匹配内容
 > 
 > echo aaa bbb ccc ddd \| grep -f match -o \# 匹配多项,还可以创建一个文件,使用-f匹配
+> 
+> grep "main\(\)" . -r --include \*.{php,html} \# 递归搜索文件夹下匹配main\(\)的.php和.html文件
+> 
+> grep "main\(\)" . -r --exclude "README" \# 在搜索结果中排除README文件
+> 
+> grep "main\(\)" . -r --exclude-from filelist \# 同上,但是根据filelist文件里的列表排除
+> 
+> grep -q "match\_pattern" file\_name \# 静默输出,成功返回0,不成功返回其他.
 
