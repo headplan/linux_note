@@ -17,3 +17,19 @@ OAuth是OpenID的一个补充\(互补\),但是完全不同的服务.
 
 
 
+
+
+
+
+
+
+
+
+
+
+**参考资料**
+
+http:\/\/baike.baidu.com\/link?url=usvcOp9TrC5FGHBRfV\_kf2NMk31z5ErQhKVS1dNu9qmQ5g0-nnp6xbcAGkAYeQz\_f78mqMFG1hmSLAYpzSKYbKoyQAUNaBqyShCiuu-psJq
+
+http:\/\/www.ruanyifeng.com\/blog\/2014\/05\/oauth\_2\_0.html
+
