@@ -15,7 +15,7 @@ OAuth 2.0协议正式发布为RFC 6749\(2012年10月\)
 
 OAuth是OpenID的一个补充\(互补\),但是完全不同的服务.
 
-### 应用场景
+### 1.应用场景
 
 有一个"云冲印"的网站,可以将用户储存在Google的照片,冲印出来.用户为了使用该服务,必须让"云冲印"读取自己储存在Google上的照片.问题是只有得到用户的授权,Google才会同意"云冲印"读取这些照片.那么,"云冲印"怎样获得用户的授权呢?传统方法是,用户将自己的Google用户名和密码,告诉"云冲印",后者就可以读取用户的照片了.这样的做法有以下几个严重的缺点:
 
@@ -33,19 +33,25 @@ OAuth是OpenID的一个补充\(互补\),但是完全不同的服务.
 
 OAuth就是为了解决上面这些问题而诞生的.
 
-### 名词定义
+### 2.名词定义
 
-Third-party application - 
+Third-party application - 第三方应用程序,本文又称"客户端"\(client\),即上面的"云冲印"例子.
 
-HTTP service - 
+HTTP service - HTTP服务提供商,本文简称"服务提供商",即上一节例子中的Google.
 
-Resource Owner - 
+Resource Owner - 资源所有者,本文又称"用户"\(user\).
 
-User Agent - 
+User Agent - 用户代理,本文就是指浏览器.
 
-Authorization server - 
+Authorization server - 认证服务器,即服务提供商专门用来处理认证的服务器.
 
-Resource server - 
+Resource server - 资源服务器,即服务提供商存放用户生成的资源的服务器.它与认证服务器可以是同一台服务器,也可以是不同的服务器.
+
+**OAuth的作用就是让"客户端"安全可控地获取"用户"的授权,与"服务商提供商"进行互动.**
+
+### 3.OAuth的思路
+
+OAuth在"客户端"与"服务器提供商"之间,设置了一个授权层\(authorization layer\).
 
 **参考资料**
 
