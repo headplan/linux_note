@@ -35,7 +35,17 @@ OAuth就是为了解决上面这些问题而诞生的.
 
 ### 名词定义
 
-啊
+Third-party application - 
+
+HTTP service - 
+
+Resource Owner - 
+
+User Agent - 
+
+Authorization server - 
+
+Resource server - 
 
 **参考资料**
 
