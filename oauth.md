@@ -31,6 +31,12 @@ OAuth是OpenID的一个补充\(互补\),但是完全不同的服务.
 * 只要有一个第三方应用程序被破解,就会导致用户密码泄漏,以及所有被密码保护的数据泄漏.
 
 
+OAuth就是为了解决上面这些问题而诞生的.
+
+### 名词定义
+
+啊
+
 **参考资料**
 
 http:\/\/baike.baidu.com\/link?url=usvcOp9TrC5FGHBRfV\_kf2NMk31z5ErQhKVS1dNu9qmQ5g0-nnp6xbcAGkAYeQz\_f78mqMFG1hmSLAYpzSKYbKoyQAUNaBqyShCiuu-psJq
