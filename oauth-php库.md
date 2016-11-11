@@ -14,10 +14,41 @@ OAuth Consumer And Server Library For PHP.它包含一个完整实现的可扩�
 * 为多用户管理消费方的 key 和 token（服务端和消费端）
 * 记录经过类库处理的进出的请求（可以在数据库中进行可选配置）
 
+### 搭建流程
+
 为服务器增加OAuth,需要检查进来的请求中OAuth认证细节.首先,我们需要4个控制器:
 
 * oauth\_register.php - 使消费方用户获得 key 和密钥
 * request\_token.php - 返回一个未认证的 request token
 * authorize.php - 认证一个request token
 * access\_token.php - 将认证后的 request token 置换为 access token
+
+还需要准备三个虚拟主机:
+* 服务提供方ServiceProvider服务提供服务器,提供受保护资源
+  * www.service.com
+
+* 服务提供方ServiceProviderOAuth认证服务器,进行请求认证
+
+  * auto.service.com
+
+* 消费方Consumer客户应用服务器,用来发起认证请求
+  * www.demo.com
+
+
+A网站:www.service.com
+B网站:www.demo.com
+
+A网站有一个用户,他的用户名,密码以及个人照片保存在A网站的数据库中.
+
+创建数据库photo
+
+> create database \`photo\`;
+> 
+> create table if not exists \`use\`\(
+> 
+> \`useid\` int\(11\) unsigned not null auto\_increment comment '用户ID',
+> 
+> \`username\` varchar\(20\) not null comment '用户名',
+> 
+> \)
 
