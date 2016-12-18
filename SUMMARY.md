@@ -12,4 +12,6 @@
     * [FastDFS](fastdfs.md)
     * [OAuth](oauth.md)
         * [oauth-php库](oauth-php库.md)
+* [阿里云服务器配置](阿里云服务器配置.md)
+    * [OneinStack安装](oneinstack安装.md)
 
