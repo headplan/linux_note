@@ -14,5 +14,5 @@
         * [oauth-php库](oauth-php库.md)
 * [阿里云服务器配置](阿里云服务器配置.md)
     * [OneinStack安装](oneinstack安装.md)
-    * [OneinStack应用](oneinstack应用.md)
+    * [软件安装记录](软件安装记录.md)
 
