@@ -22,7 +22,42 @@ chkconfig –list # SysV服务查看开机自动启
 
 ### SSH基本信息
 
+**网卡配置**
 
+需要为安装了SSH服务的系统配置一个固定的IP
+
+```
+vim /etc/sysconfig/network-scripts/ifcfg-xxx
+```
+
+**软件包**
+
+一般发行版的Linux的软件包都提供了openssh软件包,也可以向上网中提到的使用yum或apt-get等安装.
+
+**进程名**
+
+SSH服务器启动后,会自动启动名为sshd的进程.查看:
+
+```
+ps -eaf | grep sshd
+```
+
+**端口号**
+
+SSH服务运行后,默认监听TCP协议上的22端口号.查看:
+
+```
+netstat -antpul | grep sshd
+```
+
+**防火墙开放的端口号**
+
+```
+# 添加开放端口22
+iptables -I INPUT -p tcp --dport 22 -j ACCEPT
+```
+
+### SSH运行机制
 
 
 
