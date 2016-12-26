@@ -116,7 +116,23 @@ SSH是由客户端和服务端的软件组成.有两个不兼容的版本1.x和2
 /etc/ssh/sshd\_config
 
 ```
-
+# 设置SSH服务监听的端口,默认为22
+Port 22
+# any表示监听IPv4和IPv6.如果设置为inet表示只监听IPv4,inet6表示仅监听IPv6
+AddressFamily any
+# 设置允许连接到SSH服务的主机.默认0.0.0.0监听所有主机
+ListenAddress 0.0.0.0
+# 设置使用SSH协议,如果使用两个协议之间用逗号分隔,默认协议SSH2
+Protocol 2
+# 设置私钥加密文件,使用rsa,ecdsa,ed25519加密算法生成的文件
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+# 设置多少秒之后系统自动重新生成服务器的密钥
+KeyRegenerationInterval 1h
+# 定义服务器密钥长度
+ServerKeyBits 1024
+# 
 ```
 
 
