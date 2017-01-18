@@ -2,9 +2,9 @@
 
 ##### 参考资料
 
-https://github.com/shadowsocks/ShadowsocksX-NG - 客户端下载
+[https://github.com/shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG) - 客户端下载
 
-https://teddysun.com/486.html - 服务器安装
+[https://teddysun.com/486.html](https://teddysun.com/486.html) - 服务器安装
 
 安装
 
