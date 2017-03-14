@@ -135,7 +135,11 @@ Linux下的文件系统特性
 * 相对路径：对当前位置起始的路径；
   * 当前位置的表示方式：
     1. ./ - ./sysconfig/network-scripts
-    2. 省略上述符号: sysconfig/network-scripts
+    2. 省略上述符号 - sysconfig/network-scripts
+
+> 当前目录：current directory, 也称作working directory；
+>
+> 例如命令pwd: printing working directory
 
 
 
