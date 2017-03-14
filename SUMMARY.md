@@ -26,4 +26,5 @@
 * [Shadowsocks](shadowsocks.md)
 * [Linux系统学习](linux系统学习.md)
   * [计算机硬件基础](linux系统学习/计算机硬件基础.md)
+  * [企业级硬件基础](linux系统学习/企业级硬件基础.md)
 
