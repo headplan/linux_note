@@ -119,9 +119,8 @@ C:\Program files\office11\word\word.exe
 
 文件有两类数据\(或者说一个文件\)：
 
-元数据：metadata
-
-数据：data
+* 元数据：metadata\(属性信息,一些索引信息,可以理解为元数据\)
+* 数据：data
 
 
 
