@@ -113,3 +113,5 @@ Virtual Host - 基本系统加虚拟平台。
 
 Software Development Workstation - 包含软件包较多，基本系统，虚拟化平台，桌面环境，开发工具。
 
+选择Minimal,然后选择Customize now自定义.
+
