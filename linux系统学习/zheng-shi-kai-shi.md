@@ -115,3 +115,17 @@ Software Development Workstation - 包含软件包较多，基本系统，虚拟
 
 选择Minimal,然后选择Customize now自定义.
 
+**挑选软件包**
+
+Base System 
+
+=&gt; Base
+
+=&gt; Compatibllity libraries
+
+=&gt; Debugging Tools
+
+Development
+
+=&gt; Development Tools
+
