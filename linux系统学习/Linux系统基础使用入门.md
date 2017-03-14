@@ -136,10 +136,13 @@ Linux下的文件系统特性
   * 当前位置的表示方式：
     1. ./ - ./sysconfig/network-scripts
     2. 省略上述符号 - sysconfig/network-scripts
+    3. .. - 表示当前目录的上一级目录
 
 > 当前目录：current directory, 也称作working directory；
 >
 > 例如命令pwd: printing working directory
 
+**LSB: Linux Standard Base**
 
+表示Linux发行版依照LSB的规定标准的,比如`ls /`下的路径,基本是一样的.
 
