@@ -95,5 +95,21 @@ LVM扩展\(一般都会先规划好,不需要扩展\)
 
 接下来为GRUB引导安装窗口，可采用默认设置，直接单击“下一步”按钮即可.
 
+**选择安装的软件包**
 
+Desktop - 基本的桌面系统，包括常用的桌面软件，如文档查看工具。
+
+Minimal Desktop - 基本的桌面系统，包含的软件更少。
+
+**Minimal - 基本的系统，不含有任何可选的软件包。\(一般选择最小化安装\)**
+
+Basic Server - 安装的基本系统的平台支持，不包含桌面。
+
+Database Server - 基本系统平台，加上MySQL和PostgreSQL数据库，无桌面。
+
+Web Server - 基本系统平台，加上PHP，Web server，还有MySQL和PostgreSQL数据库的客户端，无桌面。
+
+Virtual Host - 基本系统加虚拟平台。
+
+Software Development Workstation - 包含软件包较多，基本系统，虚拟化平台，桌面环境，开发工具。
 
