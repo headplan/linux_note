@@ -20,5 +20,5 @@ Next下一步,选择安装过程语言,默认英文.键盘选择U.S.English,同�
 
 设置主机名,安装完成之后再修改,这里设置为headplan.下面的配置网络Configure Network安装完系统之后再修改即可.
 
-
+下一步选择时区,Asia/Shanghai.在"System clock user UTC"取消前面打勾,不使用UTC时间.
 
