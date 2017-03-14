@@ -1,5 +1,9 @@
 # 正式开始
 
+http://www.myhack58.com/Article/sort099/sort0102/2011/32363\_7.htm
+
+http://www.centoscn.com/image-text/setup/2014/1128/4199.html
+
 > Install or upgrade an existing system 安装或升级现有的系统
 >
 > install system with basic video driver 安装过程中采用 基本的显卡驱动
