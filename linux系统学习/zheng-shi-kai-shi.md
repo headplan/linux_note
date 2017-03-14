@@ -117,7 +117,7 @@ Software Development Workstation - 包含软件包较多，基本系统，虚拟
 
 **挑选软件包**
 
-Base System 
+Base System
 
 =&gt; Base
 
@@ -128,4 +128,6 @@ Base System
 Development
 
 =&gt; Development Tools
+
+之后下一步开始安装.
 
