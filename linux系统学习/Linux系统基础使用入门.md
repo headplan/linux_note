@@ -110,5 +110,18 @@ COMMAND \[OPTIONS...\] \[ARGUMENTS...\]
 1. 多选项，以及多参数和命令之间都应该使用空白字符分隔
 2. 取消命令执行：Ctrl+c
 
+**文件系统简介**
+
+```
+C:\Program files\office11\word\word.exe
+/etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+文件有两类数据\(或者说一个文件\)：
+
+元数据：metadata
+
+数据：data
+
 
 
