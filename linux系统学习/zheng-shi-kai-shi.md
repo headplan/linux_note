@@ -22,3 +22,7 @@ Next下一步,选择安装过程语言,默认英文.键盘选择U.S.English,同�
 
 下一步选择时区,Asia/Shanghai.在"System clock user UTC"取消前面打勾,不使用UTC时间.
 
+设置root密码,\*\*\*\*\*\*
+
+
+
