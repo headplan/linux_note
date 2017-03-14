@@ -8,53 +8,77 @@
 
 MySQL数据库；
 
-    cache & storage
+```
+cache & storage
+```
 
 集群：
 
-    Cluster
+```
+Cluster
 
-    lb:
+lb:
 
-        4layer
+    4layer
 
-        7layer
+    7layer
 
-    ha:
+ha:
+```
 
 分布式：
 
-    zookeeper
+```
+zookeeper
 
-    分布式文件系统
+分布式文件系统
+```
 
 虚拟化技术：
 
-    xen
+```
+xen
 
-    kvm
+kvm
+```
 
 Openstack：IAAS云；
 
 运维工具：
 
-    ansible
+```
+ansible
 
-    puppet\(ruby\), saltstack\(python\)
+puppet\(ruby\), saltstack\(python\)
+```
 
 监控工具：
 
-    zabbix
+```
+zabbix
+```
 
 大数据处理：
 
-    hadoop
+```
+hadoop
 
-    spark, storm
+spark, storm
 
-    elk: elasticsearch, logstash, kibana
+elk: elasticsearch, logstash, kibana
+```
 
 docker：
 
 Python：
+
+**认证**
+
+RedHat:
+
+* RHCSA
+* RHCE
+* RHCA
+
+
 
