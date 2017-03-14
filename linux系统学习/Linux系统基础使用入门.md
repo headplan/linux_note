@@ -26,3 +26,53 @@ root/\*\*\*\*\*\*
 
 模拟终端 - /dev/pts/0
 
+**交互式接口** - 启动终端后,在终端设备附加一个交互式应用程序,这样才能进行交互.
+
+GUI：图形界面
+
+    X protocol, window manager, desktop
+
+    Desktop:
+
+        GNOME \(C, gtk\)
+
+        KDE   \(C++, qt\)
+
+        XFCE  \(轻量级桌面\)
+
+CLI：命令行
+
+    shell程序：
+
+        sh \(bourn\)
+
+        csh 
+
+        tcsh
+
+        ksh \(korn\)
+
+        bash \(bourn again shell\), GPL
+
+        zsh 
+
+    显示当前使用的shell：
+
+        \# echo ${SHELL}
+
+    显示当前系统使用的所有shell：
+
+        \# cat /etc/shells
+
+    命令提示符：prompt
+
+        \[root@localhost ~\]\#
+
+            \[root@localhost ~\]：PS1
+
+            prompt：
+
+                管理员：\#
+
+                普通用户：$
+
