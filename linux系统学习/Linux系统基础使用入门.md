@@ -55,7 +55,7 @@ shell程序：
 
     ksh (korn)
 
-    bash (bourn again shell), GPL
+    bash (bourn again shell), sh的二次开发版,遵循GPL协议,是开源的
 
     zsh 
 
