@@ -24,20 +24,26 @@ Next下一步,选择安装过程语言,默认英文.键盘选择U.S.English,同�
 
 设置root密码,\*\*\*\*\*\*
 
-> **使用所有空间（Use All Space ）： **  
+> **使用所有空间（Use All Space ）： **  
 > 选择此选项，删除您硬盘上的所有分区（这包括如Windows的NTFS分区VFAT或其他操作系统创建的分区）。
 >
-> **替换现有的Linux系统（Replace Existing Linux System）： **  
+> **替换现有的Linux系统（Replace Existing Linux System）： **  
 > 选择此选项，以消除先前的Linux安装创建的分区。 这不会删除其他分区（如VFAT或FAT32分区），你可能对您的硬盘驱动器。
 >
-> **宿小现有系统（Shrink Current System）： **  
+> **宿小现有系统（Shrink Current System）： **  
 > 选择此选项，调整当前的数据和分区安装在手动释放的空间是一个默认的红帽企业Linux布局。
 >
-> **使用剩余空间（Use Free Space）： **  
+> **使用剩余空间（Use Free Space）： **  
 > 选择此选项以保留您当前的数据和分区并安装在未使用的存储驱动器上的空间可用的Scientific。 确保有足够的存储驱动器上的可用空间，然后再选择此选项。
 >
-> **创建自定义布局（Create Custom Layout）： **  
+> **创建自定义布局（Create Custom Layout）： **  
 > 选择此选项，手动存储设备进行分区并创建自定义布局。
+>
+> 下面有两个勾选项,一个是加密分区,一个是查看并修改分区布局
 
 选择最后一项,自定义分区布局.
+
+
+
+
 
