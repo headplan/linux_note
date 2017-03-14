@@ -56,9 +56,9 @@ shell程序：
     # cat /etc/shells
 
 命令提示符(prompt)
-    [root@localhost ~]#
-    上面的内容就是命令提示符,它的显示格式可以echo ${PS1}查看
-        prompt：
+    [root@localhost ~]
+    上面的内容是PS1,它的显示格式可以echo ${PS1}查看
+        命令提示符仅是#或$符：
             管理员：#
             普通用户：$
 ```
