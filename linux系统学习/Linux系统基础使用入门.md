@@ -30,49 +30,55 @@ root/\*\*\*\*\*\*
 
 GUI：图形界面
 
-    X protocol, window manager, desktop
+```
+X protocol, window manager, desktop
 
-    Desktop:
+Desktop:
 
-        GNOME \(C, gtk\)
+    GNOME (C, gtk)
 
-        KDE   \(C++, qt\)
+    KDE   (C++, qt)
 
-        XFCE  \(轻量级桌面\)
+    XFCE  (轻量级桌面)
+```
 
 CLI：命令行
 
-    shell程序：
+```
+shell程序：
 
-        sh \(bourn\)
+    sh (bourn研发的)
 
-        csh 
+    csh 
 
-        tcsh
+    tcsh
 
-        ksh \(korn\)
+    ksh (korn)
 
-        bash \(bourn again shell\), GPL
+    bash (bourn again shell), GPL
 
-        zsh 
+    zsh 
 
-    显示当前使用的shell：
+显示当前使用的shell：
 
-        \# echo ${SHELL}
+    # echo ${SHELL}
 
-    显示当前系统使用的所有shell：
+显示当前系统使用的所有shell：
 
-        \# cat /etc/shells
+    # cat /etc/shells
 
-    命令提示符：prompt
+命令提示符：prompt
 
-        \[root@localhost ~\]\#
+    [root@localhost ~]#
 
-            \[root@localhost ~\]：PS1
+        [root@localhost ~]：PS1
 
-            prompt：
+        prompt：
 
-                管理员：\#
+            管理员：#
 
-                普通用户：$
+            普通用户：$
+```
+
+
 
