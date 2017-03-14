@@ -32,13 +32,9 @@ GUI：图形界面
 
 ```
 X protocol, window manager, desktop
-
 Desktop:
-
     GNOME (C, gtk)
-
     KDE   (C++, qt)
-
     XFCE  (轻量级桌面)
 ```
 
@@ -46,37 +42,24 @@ CLI：命令行
 
 ```
 shell程序：
-
     sh (bourn研发的)
-
     csh 
-
     tcsh
-
     ksh (korn)
-
     bash (bourn again shell), sh的二次开发版,遵循GPL协议,是开源的
-
     zsh 
 
 显示当前使用的shell：
-
     # echo ${SHELL}
 
 显示当前系统使用的所有shell：
-
     # cat /etc/shells
 
-命令提示符：prompt
-
+命令提示符(prompt)
     [root@localhost ~]#
-
-        [root@localhost ~]：PS1
-
+    上面的内容就是命令提示符,它的显示格式可以echo ${PS1}查看
         prompt：
-
             管理员：#
-
             普通用户：$
 ```
 
