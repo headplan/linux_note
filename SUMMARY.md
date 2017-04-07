@@ -17,6 +17,7 @@
   * [OAuth](oauth.md)
     * [oauth-php库](oauth-php库.md)
   * [SSH服务](ssh服务.md)
+    * [SSH错误](ssh服务/sshcuo-wu.md)
 * [阿里云服务器配置](阿里云服务器配置.md)
   * [OneinStack安装](oneinstack安装.md)
   * [软件应用](软件安装记录.md)
