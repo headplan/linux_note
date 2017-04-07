@@ -12,6 +12,7 @@
   * [概念](概念.md)
   * [文件](文件.md)
   * [配置](配置.md)
+  * [常用建立用户分配权限](chang-yong-jian-li-yong-hu-fen-pei-quan-xian.md)
 * [服务](linux服务.md)
   * [FastDFS](fastdfs.md)
   * [OAuth](oauth.md)
