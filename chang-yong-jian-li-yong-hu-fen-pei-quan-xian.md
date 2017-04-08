@@ -53,7 +53,7 @@ mgr01,mgr2
 # mkdir /home/source
 # mkdir /home/project
 # mkdir /home/document
-  
+
 #chmod 770      /home/program
 #chgrp program  /home/program
 #chmod 770      /home/source
@@ -69,7 +69,7 @@ mgr01,mgr2
 
 # chmod 777 /home/public
 # chmod a+t /home/public
- 
+
 6.修改用户分组：
 
 # usermod -G 组名 用户名
