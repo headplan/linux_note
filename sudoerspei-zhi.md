@@ -1,5 +1,7 @@
 # Sudoers配置
 
+编辑命令:visudo
+
 ```
 # SUDO_LOGS
 Defaults      logfile=/tmp/sudo_logs.log
