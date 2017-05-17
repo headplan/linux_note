@@ -35,8 +35,8 @@ wget http://mirrors.linuxeye.com/oneinstack.tar.gz         #不包含源码，�
 **接下来是脚本一键安装时的配置**
 
 ```
-Please input SSH port(Default: 22):        #更改SSH端口号,建议默认22,过程中出现Defaultk可直接回车
-Do you want to install Web server? [y/n]:y #是否安装Web服务器,就是Nginx,Apache,Tomcat
+Please input SSH port(Default: 22):        # 更改SSH端口号,建议默认22,过程中出现Defaultk可直接回车
+Do you want to install Web server? [y/n]:y # 是否安装Web服务器,就是Nginx,Apache,Tomcat
 Please select Nginx server:
         1. Install Nginx
         2. Install Tengine
