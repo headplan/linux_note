@@ -24,3 +24,5 @@ sudo dd if=/Users/headplan/Desktop/kali.iso of=/dev/disk2 bs=1m
 
 Mac下如果遇到`dd: /dev/disk2: Resource busy`错误 , 先使用`diskutil unmountDisk /dev/disk2`命令卸载磁盘再烧录
 
+安装过程基本没有配合 , 下一步安装 . 
+
