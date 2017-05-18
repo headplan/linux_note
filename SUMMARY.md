@@ -29,4 +29,5 @@
   * [环境优化](环境优化.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
+* [Kali Linux](kali-linux.md)
 
