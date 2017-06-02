@@ -49,5 +49,56 @@ config.vm.provider :virtualbox do |vb|
 end
 ```
 
+**挂载失败的问题**
 
+报错
+
+```
+Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. 
+Please verify that the guest additions are properly installed in the guest and can work properly. The command attempted was:
+```
+
+解决
+
+```
+//sudo apt-get install virtualbox-guest-dkms
+sudo apt-get install virtualbox-guest-utils
+```
+
+报错
+
+```
+default: stdin: is not a tty
+```
+
+解决
+
+```
+vi /root/.profile
+```
+
+把mesg n替换成tty -s && mesg n
+
+**Redis文件权限问题**
+
+**报错**
+
+redis Can't open the log file
+
+redis无法加载.rdb
+
+redis无法载入.rdb
+
+**解决**
+
+把 redis:redis 用户组设置更改为 vagrant:vagrant.
+
+[http://serverfault.com/questions/541258/permissions-error-trying-to-dump-redis-to-a-vagrant-shared-folder](http://serverfault.com/questions/541258/permissions-error-trying-to-dump-redis-to-a-vagrant-shared-folder)
+
+  
+
+
+参考内容:
+
+[http://rmingwang.com/vagrant-commands-and-config.html](http://rmingwang.com/vagrant-commands-and-config.html)
 
