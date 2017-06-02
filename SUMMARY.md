@@ -38,4 +38,5 @@
   * [本地配置流程](vagrant/ben-di-pei-zhi-liu-cheng.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
+* [Shell脚本](shelljiao-ben.md)
 
