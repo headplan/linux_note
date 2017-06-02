@@ -31,7 +31,7 @@ config.vm.synced\_folder ".", "/var/www", :mount\_options =&gt; \["dmode=777", "
 
 config.vm.provider "virtualbox" do \|vb\|
 
- vb.customize \["modifyvm", :id, "--cpus", "1"\]
+vb.customize \["modifyvm", :id, "--cpus", "1"\]
 
 end
 
@@ -69,6 +69,14 @@ cd /media/cdrom/
 sudo ./VBoxLinuxAddtions.run
 ```
 
+![](/assets/vagrant_err1.png)
+
+安装Vagrant插件[vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)可以解决这个问题，因为该插件会在虚拟机内核升级之后重新安装VirtualBox Guest Additions.
+
+```
+vagrant plugin install vagrant-vbguest
+```
+
 参考
 
 [https://segmentfault.com/a/1190000002436885](https://segmentfault.com/a/1190000002436885)
@@ -76,6 +84,4 @@ sudo ./VBoxLinuxAddtions.run
 [https://segmentfault.com/q/1010000004621907/a-1020000004622731](https://segmentfault.com/q/1010000004621907/a-1020000004622731)
 
 [http://blog.csdn.net/hel12he/article/details/51353539](http://blog.csdn.net/hel12he/article/details/51353539)
-
-
 
