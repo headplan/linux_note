@@ -35,6 +35,7 @@
   * [Vagrant创建base环境](vagrant/vagrantchuang-jian-base-huan-jing.md)
   * [常见问题](vagrant/chang-jian-wen-ti.md)
   * [PuPHPet](vagrant/puphpet.md)
+  * [本地配置流程](vagrant/ben-di-pei-zhi-liu-cheng.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
 
