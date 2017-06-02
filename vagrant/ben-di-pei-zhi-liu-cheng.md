@@ -12,6 +12,10 @@ config.vm.network "private_network", ip: "192.168.33.11"
 # config.vm.synced_folder "./wwwroot", "/home/wwwroot", create: true, owner:"www", group: "www"
 # 启动box
 vagrant up
+# 基本信息
+vagrant:vagrant
+root:vagrant
+
 ```
 
 参考资料 :
