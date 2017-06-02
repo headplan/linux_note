@@ -27,6 +27,7 @@
   * [脚本管理](脚本管理.md)
   * [环境优化](环境优化.md)
 * [Vagrant](vagrant.md)
+  * [简介](vagrant/jian-jie.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
 * Vagrant
