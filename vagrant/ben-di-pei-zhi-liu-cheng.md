@@ -27,6 +27,11 @@ echo 'headplan ALL=(ALL) ALL' >> /etc/sudoers
 tail -1 /etc/sudoers # 检查一下
 ```
 
+```
+vagrant halt # 关机
+vagrant package # 打包
+```
+
 之后的部署参考阿里云服务器配置
 
 参考资料 :
