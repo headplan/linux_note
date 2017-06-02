@@ -27,6 +27,8 @@ echo 'headplan ALL=(ALL) ALL' >> /etc/sudoers
 tail -1 /etc/sudoers # 检查一下
 ```
 
+之后的部署参考阿里云服务器配置
+
 参考资料 :
 
 [http://seisman.info/linux-environment-for-seismology-research.html](http://seisman.info/linux-environment-for-seismology-research.html)
