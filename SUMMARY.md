@@ -32,6 +32,7 @@
   * [Vagrantfile配置文件](vagrant/vagrantfilepei-zhi-wen-jian.md)
   * [注意事项](vagrant/zhu-yi-shi-xiang.md)
   * [Vagrant创建多节点虚拟机集群](vagrant/vagrantchuang-jian-duo-jie-dian-xu-ni-ji-ji-qun.md)
+  * [Vagrant创建base环境](vagrant/vagrantchuang-jian-base-huan-jing.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
 
