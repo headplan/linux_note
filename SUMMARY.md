@@ -30,6 +30,7 @@
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)
   * [Vagrantfile配置文件](vagrant/vagrantfilepei-zhi-wen-jian.md)
+  * [注意事项](vagrant/zhu-yi-shi-xiang.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
 
