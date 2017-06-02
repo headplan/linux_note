@@ -13,9 +13,18 @@ config.vm.network "private_network", ip: "192.168.33.11"
 # 启动box
 vagrant up
 # 基本信息
+# 连接
+vagrant ssh
 vagrant:vagrant
 root:vagrant
-
+# 添加新用户
+sudo adduser headplan
+sudo passwd headplan
+headplan:headplan
+# 设置普通用户有roo权限
+su # 切换到root
+echo 'headplan ALL=(ALL) ALL' >> /etc/sudoers
+tail -1 /etc/sudoers # 检查一下
 ```
 
 参考资料 :
