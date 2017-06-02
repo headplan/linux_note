@@ -33,6 +33,7 @@
   * [注意事项](vagrant/zhu-yi-shi-xiang.md)
   * [Vagrant创建多节点虚拟机集群](vagrant/vagrantchuang-jian-duo-jie-dian-xu-ni-ji-ji-qun.md)
   * [Vagrant创建base环境](vagrant/vagrantchuang-jian-base-huan-jing.md)
+  * [常见问题](vagrant/chang-jian-wen-ti.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
 
