@@ -26,7 +26,8 @@
   * [软件应用](软件安装记录.md)
   * [脚本管理](脚本管理.md)
   * [环境优化](环境优化.md)
+* [Vagrant](vagrant.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
-* [Kali Linux](kali-linux.md)
+* Vagrant
 
