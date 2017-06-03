@@ -1,6 +1,7 @@
 # Summary
 
 * [Linux](README.md)
+* [硬件.内核.Shell.监测](ying-4ef6-nei-6838-shell-jian-ce.md)
 * [软件.打印.开发.工具](chapter1.md)
   * [ngrep](ngrep.md)
 * [网络管理](网络管理.md)
@@ -38,5 +39,5 @@
   * [本地配置流程](vagrant/ben-di-pei-zhi-liu-cheng.md)
 * [安全加固策略](安全加固策略.md)
 * [Shadowsocks](shadowsocks.md)
-* [Shell脚本](shelljiao-ben.md)
+* [硬件.内核.Shell.监测](ying-4ef6-nei-6838-shell-jian-ce.md)
 
