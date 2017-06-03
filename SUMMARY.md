@@ -9,6 +9,7 @@
   * [nmap](nmap.md)
 * [文件和目录管理](文件和目录管理.md)
   * [grep](grep.md)
+  * [配置文件](pei-zhi-wen-jian.md)
 * [用户与用户组](用户与用户组.md)
   * [概念](概念.md)
   * [文件](文件.md)
