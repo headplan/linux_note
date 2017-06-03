@@ -22,18 +22,18 @@
 
 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取.（每个用户都有一个.bashrc文件，在用户目录下）
 
-此文件类似于/etc/bashrc , 不需要重启生效 , 重新打开一个bash即可生效 , /etc/bashrc对所有用户新打开的bash都生效 , 但~/**.**bashrc只对当前用户新打开的bash生效 . 
+此文件类似于/etc/bashrc , 不需要重启生效 , 重新打开一个bash即可生效 , /etc/bashrc对所有用户新打开的bash都生效 , 但~/**.**bashrc只对当前用户新打开的bash生效 .
 
 #### ~/.bash\_logout
 
 当每次退出系统\(退出bash shell\)时,执行该文件.
 
-
+---
 
 另外,/etc/profile中设定的变量\(全局\)的可以作用于任何用户,而~/.bashrc等中设定的变量\(局部\)只能继承/etc/profile中的变量,他们是"父子"关系.
 
 * ~/.bash\_profile - 是交互式、login 方式进入bash 运行的
 * ~/.bashrc - 是交互式 non-login 方式进入bash 运行的
 
-通常二者设置大致相同 , 所以通常前者会调用后者 . 
+通常二者设置大致相同 , 所以通常前者会调用后者 .
 
