@@ -29,6 +29,7 @@
   * [软件应用](软件安装记录.md)
   * [脚本管理](脚本管理.md)
   * [环境优化](环境优化.md)
+  * [CentOS7简单初始化](centos7jian-dan-chu-shi-hua.md)
 * [Vagrant](vagrant.md)
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)
