@@ -24,6 +24,7 @@
     * [SSH错误](ssh服务/sshcuo-wu.md)
   * [SVN服务器搭建](svnfu-wu-qi-da-jian.md)
     * [配置SYNC上线工具](svnfu-wu-qi-da-jian/pei-zhi-sync-shang-xian-gong-ju.md)
+  * [Google身份验证器](googleshen-fen-yan-zheng-qi.md)
 * [阿里云服务器配置](阿里云服务器配置.md)
   * [OneinStack安装](oneinstack安装.md)
   * [软件应用](软件安装记录.md)
