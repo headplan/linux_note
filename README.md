@@ -1,4 +1,8 @@
 # Linux
 
-Linux相关笔记 
+参考资料
+
+http://www.runoob.com/linux/linux-tutorial.html - 简洁方便
+
+http://man.linuxde.net/ - 命令搜索
 
