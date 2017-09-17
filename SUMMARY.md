@@ -16,6 +16,7 @@
   * [export](ying-4ef6-nei-6838-shell-jian-ce/export.md)
   * [nmap](nmap.md)
   * [grep](grep.md)
+  * [ctags](ctags.md)
 * [软件与服务](linux服务.md)
   * [FastDFS](fastdfs.md)
   * [OAuth](oauth.md)
