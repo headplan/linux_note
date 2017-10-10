@@ -17,6 +17,7 @@
   * [nmap](nmap.md)
   * [grep](grep.md)
   * [ctags](ctags.md)
+  * [scp](scp.md)
 * [软件与服务](linux服务.md)
   * [FastDFS](fastdfs.md)
   * [OAuth](oauth.md)
