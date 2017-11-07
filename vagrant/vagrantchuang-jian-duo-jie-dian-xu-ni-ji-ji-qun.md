@@ -5,6 +5,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+    config.ssh.username = "vagrant"
+    config.ssh.password = "vagrant"
     (1..3).each do |i|
         config.vm.define "node#{i}" do |node|
         # 设置使用的盒子
@@ -14,7 +16,7 @@ Vagrant.configure("2") do |config|
         # 设置虚拟机的IP
         node.vm.network "private_network", ip:"192.168.33.#{i}"
         # 设置共享目录
-        node.vm.synced_folder "./wwwroot", "/home/wwwroot", create:true, owner:"www", group:"www"
+        node.vm.synced_folder "./", "/home/headplan"
         # VirtaulBox相关配置
         node.vm.provider "virtualbox" do |v|
             # 设置虚拟机的名称
@@ -34,13 +36,18 @@ Vagrant.configure("2") do |config|
  end
 ```
 
+Shell脚本部分还可以添加初始化时安装Docker
 
+```
+# 使用shell脚本进行软件安装和配置
+node.vm.provision "shell", inline: <<-SHELL
 
+    # 安装docker 1.11.0
+    wget -qO- https://get.docker.com/ | sed 's/docker-engine/docker-engine=1.11.0-0~trusty/' | sh
+    usermod -aG docker vagrant
 
-
-
-
-
+SHELL
+```
 
 参考内容:
 
