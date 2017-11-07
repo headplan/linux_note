@@ -71,7 +71,7 @@ vagrant ssh-config:查看虚拟机SSH配置
 **SSH密钥**
 
 ```
-cat $HOME/.ssh/id_rsa.pub | ssh vagrant@192.168.59.2 'cat >> $HOME/.ssh/authorized_keys'
+cat $HOME/.ssh/id_rsa.pub | ssh vagrant@192.168.33.2 'cat >> $HOME/.ssh/authorized_keys'
 ```
 
 
