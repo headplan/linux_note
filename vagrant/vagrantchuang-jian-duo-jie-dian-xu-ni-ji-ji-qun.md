@@ -52,10 +52,12 @@ SHELL
 # 这里用的Linux是最小化的,没有ifconfig命令
 # 可以使用ip addr,这里初始化时候运行了yum安装
 # 这里为了查看ARP等通信过程,还要安装telnet
+# 安装抓包工具tcpdump
 node.vm.provision "shell", inline: <<-SHELL
     sudo yum install -y net-tools
     sudo yum install -y telnet
     sudo yum install -y telnet-server
+    sudo yum install -y tcpdump
 SHELL
 ```
 
