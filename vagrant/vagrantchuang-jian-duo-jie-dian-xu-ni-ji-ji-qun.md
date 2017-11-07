@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
             v.cpus = 1
         end
         # 使用Shell安装脚本
-        # config.vm.provision "shell", inline: <<-SHELL
+        # node.vm.provision "shell", inline: <<-SHELL
         #   apt-get update
         #   apt-get install -y apache2
         # SHELL
@@ -47,6 +47,26 @@ node.vm.provision "shell", inline: <<-SHELL
     usermod -aG docker vagrant
 
 SHELL
+```
+
+```
+# 这里用的Linux是最小化的,没有ifconfig命令
+# 可以使用ip addr,这里初始化时候运行了yum安装
+node.vm.provision "shell", inline: <<-SHELL
+    yum install -y net-tools
+SHELL
+```
+
+**多节点的管理使用**
+
+和正常使用vagrant命令一样 , 后面多写一个节点名字即可
+
+```
+vagrant up node1 node3
+vagrant ssh:SSH登陆虚拟机
+vagrant halt:关闭虚拟机
+vagrant destroy:删除虚拟机
+vagrant ssh-config:查看虚拟机SSH配置
 ```
 
 参考内容:
