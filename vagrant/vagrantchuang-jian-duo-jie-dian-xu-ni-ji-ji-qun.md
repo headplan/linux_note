@@ -51,9 +51,23 @@ SHELL
 ```
 # 这里用的Linux是最小化的,没有ifconfig命令
 # 可以使用ip addr,这里初始化时候运行了yum安装
+# 这里为了查看ARP等通信过程,还要安装telnet
 node.vm.provision "shell", inline: <<-SHELL
-    yum install -y net-tools
+    sudo yum install -y net-tools
+    sudo yum install -y telnet
+    sudo yum install -y telnet-server
 SHELL
+```
+
+这里的telnet服务要自己启动一下
+
+```
+# 启动telnet服务
+systemctl start telnet.socket
+# 查看服务状态
+systemctl status telnet.socket
+# 查看侦听端口
+ss  -tnlp | grep 23
 ```
 
 **多节点的管理使用**
