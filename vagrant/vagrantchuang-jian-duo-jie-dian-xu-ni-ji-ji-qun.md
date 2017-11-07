@@ -27,10 +27,9 @@ Vagrant.configure("2") do |config|
             v.cpus = 1
         end
         # 使用Shell安装脚本
-        # node.vm.provision "shell", inline: <<-SHELL
-        #   apt-get update
-        #   apt-get install -y apache2
-        # SHELL
+        node.vm.provision "shell", inline: <<-SHELL
+            yum install -y net-tools
+        SHELL
         end
     end
  end
