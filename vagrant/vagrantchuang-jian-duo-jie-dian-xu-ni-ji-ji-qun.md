@@ -68,7 +68,11 @@ vagrant destroy:删除虚拟机
 vagrant ssh-config:查看虚拟机SSH配置
 ```
 
-参考内容:
+**SSH密钥**
 
-[http://kiwenlau.com/2016/07/03/vagrant-vm-cluster/](http://kiwenlau.com/2016/07/03/vagrant-vm-cluster/)
+```
+cat $HOME/.ssh/id_rsa.pub | ssh vagrant@192.168.59.2 'cat >> $HOME/.ssh/authorized_keys'
+```
+
+
 
