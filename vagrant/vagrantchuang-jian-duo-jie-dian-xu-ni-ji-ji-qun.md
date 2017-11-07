@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
         # 设置虚拟机的主机名
         node.vm.hostname = "node#{i}"
         # 设置虚拟机的IP
-        node.vm.network "private_network", ip:"192.168.33.#{i}"
+        node.vm.network "private_network", ip:"192.168.33.1#{i}"
         # 设置共享目录
         node.vm.synced_folder "./", "/home/headplan"
         # VirtaulBox相关配置
