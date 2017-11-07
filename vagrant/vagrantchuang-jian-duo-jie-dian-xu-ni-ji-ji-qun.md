@@ -34,6 +34,14 @@ Vagrant.configure("2") do |config|
  end
 ```
 
+
+
+
+
+
+
+
+
 参考内容:
 
 [http://kiwenlau.com/2016/07/03/vagrant-vm-cluster/](http://kiwenlau.com/2016/07/03/vagrant-vm-cluster/)

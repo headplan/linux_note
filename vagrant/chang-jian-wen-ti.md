@@ -77,6 +77,14 @@ sudo ./VBoxLinuxAddtions.run
 vagrant plugin install vagrant-vbguest
 ```
 
+初始化时候SSH报错的问题
+
+```
+Warning: Remote connection disconnect. Retrying...
+```
+
+http://www.cnblogs.com/csliwei/p/5860005.html
+
 参考
 
 [https://segmentfault.com/a/1190000002436885](https://segmentfault.com/a/1190000002436885)
