@@ -29,7 +29,7 @@ wget http://mirrors.linuxeye.com/oneinstack.tar.gz         #不包含源码，�
 
     tar xzf oneinstack-full.tar.gz 
     cd oneinstack                  #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件 
-    screen -S oneinstack           #如果网路出现中断，可以执行命令`screen -r oneinstack`重新连接安装窗口 
+    screen -S oneinstack           #如果网路出现中断，可以执行命令`screen -D -r oneinstack`重新连接安装窗口(-D为踢掉前一个用户再登录) 
     ./install.sh                   #注：请勿sh install.sh或者bash install.sh这样执行
 
 **接下来是脚本一键安装时的配置**
