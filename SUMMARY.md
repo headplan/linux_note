@@ -1,7 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-  * [发行版整理](fa-xing-ban-zheng-li.md)
+  * [发行版](fa-xing-ban-zheng-li.md)
+* [系统学习](learning_linux.md)
+  * [基础知识](learning_linux/ji-chu-zhi-shi.md)
 * [系统应用](xi-tong-ying-yong.md)
   * [配置文件](pei-zhi-wen-jian.md)
   * [Linux下" &gt;/dev/null 2&gt;&1 "相关知识说明](ying-4ef6-nei-6838-shell-jian-ce/linux4e0b22-dev-null-2-and-1-xiang-guan-zhi-shi-shuo-ming.md)
@@ -33,6 +35,7 @@
   * [脚本管理](脚本管理.md)
   * [环境优化](环境优化.md)
   * [CentOS7简单初始化](centos7jian-dan-chu-shi-hua.md)
+  * [https配置](httpspei-zhi.md)
 * [Vagrant](vagrant.md)
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)
