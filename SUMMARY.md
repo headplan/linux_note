@@ -17,7 +17,7 @@
     * [配置](配置.md)
     * [常用建立用户分配权限](chang-yong-jian-li-yong-hu-fen-pei-quan-xian.md)
     * [sudoers配置](sudoerspei-zhi.md)
-* [Shell与工具](shellyu-gong-ju.md)
+* [工具应用](shellyu-gong-ju.md)
   * [ngrep](ngrep.md)
   * [export](ying-4ef6-nei-6838-shell-jian-ce/export.md)
   * [nmap](nmap.md)
