@@ -36,7 +36,7 @@
   * [软件应用](oninstack/yingyong.md)
   * [脚本管理](oninstack/jiaoben.md)
   * [环境优化](oninstack/youhua.md)
-  * [https配置](oninstack/httpspei-zhi.md)
+  * [HTTPS部署](oninstack/httpspei-zhi.md)
 * [Vagrant](vagrant.md)
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)
