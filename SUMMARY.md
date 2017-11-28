@@ -13,6 +13,7 @@
     * [文件](learning_linux/yong-hu-yu-yong-hu-zu/wen-jian.md)
     * [配置](learning_linux/yong-hu-yu-yong-hu-zu/pei-zhi.md)
     * [常用建立用户分配权限](learning_linux/yong-hu-yu-yong-hu-zu/chang-yong-jian-li-yong-hu-fen-pei-quan-xian.md)
+    * [Sudoers配置](learning_linux/yong-hu-yu-yong-hu-zu/sudoerspei-zhi.md)
 * [Oneinstack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
