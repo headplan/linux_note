@@ -8,6 +8,7 @@
       * [Unix发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/unixfa-zhan-li-shi.md)
       * [Linux发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/linuxfa-zhan-li-shi.md)
     * [计算机硬件](learning_linux/ji-chu-zhi-shi/ji-suan-ji-ying-jian.md)
+  * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
 * [Oneinstack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
@@ -32,8 +33,6 @@
   * test
 * [软件与服务](linux服务.md)
   * [FastDFS](fastdfs.md)
-  * [OAuth](oauth.md)
-    * [oauth-php库](oauth-php库.md)
   * [SSH服务](ssh服务.md)
     * [SSH错误](ssh服务/sshcuo-wu.md)
   * [SVN服务器搭建](svnfu-wu-qi-da-jian.md)
