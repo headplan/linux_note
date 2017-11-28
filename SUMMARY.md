@@ -37,6 +37,7 @@
   * [脚本管理](oninstack/jiaoben.md)
   * [环境优化](oninstack/youhua.md)
   * [HTTPS部署](oninstack/httpspei-zhi.md)
+  * [fail2ban监控](oninstack/fail2banjian-kong.md)
 * [Vagrant](vagrant.md)
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)
