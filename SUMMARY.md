@@ -11,6 +11,7 @@
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
     * [概念](learning_linux/yong-hu-yu-yong-hu-zu/gai-nian.md)
     * [文件](learning_linux/yong-hu-yu-yong-hu-zu/wen-jian.md)
+    * [配置](learning_linux/yong-hu-yu-yong-hu-zu/pei-zhi.md)
 * [Oneinstack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
