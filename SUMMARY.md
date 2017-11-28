@@ -5,6 +5,8 @@
 * [系统学习](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
     * [计算机与操作系统](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong.md)
+      * [Unix发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/unixfa-zhan-li-shi.md)
+      * [Linux发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/linuxfa-zhan-li-shi.md)
     * [计算机硬件](learning_linux/ji-chu-zhi-shi/ji-suan-ji-ying-jian.md)
 * [系统应用](xi-tong-ying-yong.md)
   * [配置文件](pei-zhi-wen-jian.md)
