@@ -25,6 +25,9 @@ hdiutil convert -format UDRW -o ubuntu.iso ubuntu-14.04.5-desktop-amd64.iso
 
 ```asciidoc
 diskutil list
+```
+
+```asciidoc
 # 可以看到类似的消息
 dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
