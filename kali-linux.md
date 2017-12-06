@@ -15,7 +15,7 @@ hdiutil convert -format UDRW -o ubuntu.iso ubuntu-14.04.5-desktop-amd64.iso
 * `-format`为生成文件的权限,
 * `UDRW`表示转换成有`read/write`的权限的镜像
 
-不是Mac OS上可以不用转换 . 后面直接dd烧录即可 , 如果在Mac OS上安装 , 也要将dmg重命名\(mv\)为iso , 安装时更好识别 . 
+不是Mac OS上可以不用转换 . 后面直接dd烧录即可 , 如果在Mac OS上安装 , 也要将dmg重命名\(mv\)为iso , 安装时更好识别 .
 
 #### diskutil
 
@@ -55,9 +55,9 @@ fdisk -l
 
 #### dd
 
-把安装文件写入U盘 . 
+把安装文件写入U盘 .
 
-`dd`是`Unix`和类`Unix`系统上的命令 , 作用就是用指定大小的块拷贝一个文件 , 并在拷贝的同时进行指定的转换 . 
+`dd`是`Unix`和类`Unix`系统上的命令 , 作用就是用指定大小的块拷贝一个文件 , 并在拷贝的同时进行指定的转换 .
 
 **使用dd命令烧录**
 
@@ -73,7 +73,7 @@ sudo dd if=/Users/headplan/Desktop/kali.iso of=/dev/disk2 bs=1m
 
 * `bs`是块大小 , 这里使用`1m`的块大小
 
-漫长的等待 , 写入完成 : 
+漫长的等待 , 写入完成 :
 
 ```
 1052+1 records in
@@ -83,6 +83,12 @@ sudo dd if=/Users/headplan/Desktop/kali.iso of=/dev/disk2 bs=1m
 
 Mac下如果遇到`dd: /dev/disk2: Resource busy`错误 , 先使用`diskutil unmountDisk /dev/disk2`命令卸载磁盘再烧录
 
+**查看烧录进度**
+
+```
+sudo killall -29 dd
+```
+
 **安全拔出U盘**
 
 ```
@@ -91,11 +97,11 @@ sudo eject /dev/rdisk2
 
 #### 销毁安装数据
 
-烧录后的U盘会影响U盘的使用 , 会只显示几百K可用 , 可以把U盘格式化清除数据 , 也可以使用`dd`命令销毁磁盘数据 : 
+烧录后的U盘会影响U盘的使用 , 会只显示几百K可用 , 可以把U盘格式化清除数据 , 也可以使用`dd`命令销毁磁盘数据 :
 
 ```
 sudo dd if=/dev/urandom of=/dev/rdisk2
 ```
 
-使用随机数填充U盘 , 可以用来销毁数据 , 一般用于重要数据否则没有必要使用随机数填充 . 
+使用随机数填充U盘 , 可以用来销毁数据 , 一般用于重要数据否则没有必要使用随机数填充 .
 
