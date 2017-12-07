@@ -77,7 +77,7 @@ Shadowsocks-libev 版：
 
 #### ubuntu
 
-ubuntu16.04以上版本直接安装 : 
+ubuntu16.04以上版本直接安装 :
 
 ```
 sudo apt install shadowsocks
@@ -89,7 +89,7 @@ sudo apt install shadowsocks
 sslocal --help
 ```
 
-这里用加载配置文件的方式 : 
+这里用加载配置文件的方式 :
 
 ```
 sslocal -c 配置文件
@@ -99,9 +99,53 @@ sslocal -c 配置文件
 
 ```js
 {
-
+    "server":"11.22.33.44", # 服务端IP
+    "server_port":12345,    # 服务端端口
+    "local_port":1080,      # 本地端口,默认1080
+    "password":"123456",    # 服务端设置的密码
+    "timeout":"600",        # 超时设置
+    "method":"aes-256-cfb"  # 加密方式
 }
 ```
 
+**GUI客户端**
 
+使用图形界面 , Linux有QT版 : 
+
+```
+sudo apt install shadowsocks-qt
+```
+
+配置和上面的配置文件说明类似 , 不过和Mac中的略有不同 , 没有自带全局代理的功能 , 如果只是浏览器 , 可以安装一些插件代理 , 但是比较麻烦 , 这里还是使用全局代理的方式 : 
+
+**安装GenPAC**
+
+基于gfwlist的代理自动配置\(Proxy Auto-config\)文件生成工具 , 支持自定义规则 . 
+
+```
+sudo pip install genpac
+pip install --upgrade genpac
+```
+
+调用在线gfwlist列表生成本地autoproxy.pac文件 : 
+
+```
+mkdir .sspac && cd .sspac
+touch my-rules.txt
+```
+
+创建存储pac的文件夹 , 以及自定义规则文件 . 运行命令生成pac文件 : 
+
+```
+genpac --pac-proxy "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" \
+--output="~/.sspac/proxy.pac" \
+--gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" \
+--user-rule-from="~/.sspac/my-rules.txt"
+```
+
+**设置全局代理**
+
+配置Network Proxy
+
+URL配置 : file:///home/{user}/.sspac/proxy.pac
 
