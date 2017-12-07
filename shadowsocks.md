@@ -71,5 +71,37 @@ Shadowsocks-libev 版：
 /etc/shadowsocks-libev/config.json
 ```
 
+---
+
+### Shadowsockske客户端
+
+#### ubuntu
+
+ubuntu16.04以上版本直接安装 : 
+
+```
+sudo apt install shadowsocks
+```
+
+**启动**
+
+```
+sslocal --help
+```
+
+这里用加载配置文件的方式 : 
+
+```
+sslocal -c 配置文件
+```
+
+**配置文件**
+
+```js
+{
+
+}
+```
+
 
 
