@@ -2,6 +2,7 @@
 
 * [关于](README.md)
 * [操作系统](cao-zuo-xi-tong.md)
+  * [导论](cao-zuo-xi-tong/dao-lun.md)
 * [Linux](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
     * [计算机与操作系统](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong.md)
