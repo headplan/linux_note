@@ -47,7 +47,7 @@ cd /vagrant 切换到开发目录,也就是宿主机上的’~/dev’目录,是�
 
 Vagrant初始化成功后,会在目录中生成一个Vagrantfile的配置文件,可以修改这个配置文件进行一些个性化定制.
 
-Vagrant默认是使用端口映射方式将虚拟机的端口映射本地从而实现类似http://localhost:80这种访问方式,这种方式比较麻烦,新开和修改端口的时候都得编辑.相比较而言,host-only模式显得方便多了.打开Vagrantfile,将下面这行的注释去掉（移除\#）并保存:
+Vagrant默认是使用端口映射方式将虚拟机的端口映射本地从而实现类似[http://localhost:80这种访问方式,这种方式比较麻烦,新开和修改端口的时候都得编辑.相比较而言,host-only模式显得方便多了.打开Vagrantfile,将下面这行的注释去掉（移除\#）并保存](http://localhost:80这种访问方式,这种方式比较麻烦,新开和修改端口的时候都得编辑.相比较而言,host-only模式显得方便多了.打开Vagrantfile,将下面这行的注释去掉（移除#）并保存):
 
 ```
 config.vm.network :private_network, ip: "192.168.33.10"
@@ -71,7 +71,7 @@ config.vm.network :private_network, ip: "192.168.33.10"
  vagrant box add haha ~/box/package.box # 添加package.box镜像并命名为hahaha
 ```
 
- cd ~/dev \#切换到项目目录
+cd ~/dev \#切换到项目目录
 
 ```
  vagrant init haha # 用haha镜像初始化
@@ -106,14 +106,14 @@ vagrant reload --provision
 apt-get update
 apt-get install -y apache2
 if ! [ -L /var/www ]; then
-	rm -rf /var/www
-	ln -fs /vagrant /var/www
+    rm -rf /var/www
+    ln -fs /vagrant /var/www
 fi
 然后在Vagrantfile里面添加这个配置
 Vagrant.configure(“2”) do |config|
-	config.vm.box = “hashicorp/precise64”
-	…
-	config.vm.provision “shell”, path: “bootstrap.sh” # 添加这行
+    config.vm.box = “hashicorp/precise64”
+    …
+    config.vm.provision “shell”, path: “bootstrap.sh” # 添加这行
 end
 ```
 

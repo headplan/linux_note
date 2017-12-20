@@ -1,6 +1,8 @@
-# Linux
+# 关于
 
-相关参考资料
+重新整理 , 因为gitbook中文bug , 目录乱了 . 
+
+**相关参考**
 
 [http://www.runoob.com/linux/linux-tutorial.html](http://www.runoob.com/linux/linux-tutorial.html) - 简洁方便
 

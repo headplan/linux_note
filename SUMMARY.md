@@ -1,8 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-  * [发行版](fa-xing-ban-zheng-li.md)
-* [系统学习](learning_linux.md)
+* [关于](README.md)
+* [Linux](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
     * [计算机与操作系统](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong.md)
       * [Unix发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/unixfa-zhan-li-shi.md)
