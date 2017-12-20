@@ -4,21 +4,21 @@
 
 ## Kcptun介绍
 
-Kcptun 是一个非常简单和快速的，基于 KCP 协议的 UDP 隧道，它可以将 TCP 流转换为 KCP+UDP 流。而 KCP 是一个快速可靠协议，能以比 TCP 浪费10%-20%的带宽的代价，换取平均延迟降低 30%-40%，且最大延迟降低三倍的传输效果。
+Kcptun 是一个非常简单和快速的，基于 KCP 协议的 UDP 隧道，它可以将 TCP 流转换为 KCP+UDP 流。而 KCP 是一个快速可靠协议，能以比 TCP 浪费10%-20%的带宽的代价，换取平均延迟降低 30%-40%，且最大延迟降低三倍的传输效果。
 
-Kcptun 是 KCP 协议的一个简单应用，可以用于任意 TCP 网络程序的传输承载，以提高网络流畅度，降低掉线情况。由于 Kcptun 使用 Go 语言编写，内存占用低（经测试，在64M内存服务器上稳定运行），而且适用于所有平台，甚至 Arm 平台。
+Kcptun 是 KCP 协议的一个简单应用，可以用于任意 TCP 网络程序的传输承载，以提高网络流畅度，降低掉线情况。由于 Kcptun 使用 Go 语言编写，内存占用低（经测试，在64M内存服务器上稳定运行），而且适用于所有平台，甚至 Arm 平台。
 
 Kcptun 工作示意图：![](/assets/kcptun.png)KCP 协议：[https://github.com/skywind3000/kcp](https://github.com/skywind3000/kcp)
 
 Kcptun 项目地址：[https://github.com/xtaci/kcptun](https://github.com/xtaci/kcptun)
 
-下载CPU对应版本 : https://github.com/xtaci/kcptun/releases
+下载CPU对应版本 : [https://github.com/xtaci/kcptun/releases](https://github.com/xtaci/kcptun/releases)
 
-正在使用的搬瓦工系统为CentOS , 所以下载对应的[**kcptun-linux-amd64-20170525.tar.gz**](https://github.com/xtaci/kcptun/releases/download/v20170525/kcptun-linux-amd64-20170525.tar.gz) . 
+正在使用的搬瓦工系统为CentOS , 所以下载对应的[**kcptun-linux-amd64-20170525.tar.gz**](https://github.com/xtaci/kcptun/releases/download/v20170525/kcptun-linux-amd64-20170525.tar.gz) .
 
-下载的是预编译版 , 所以直接运行 , 配合参数即可 , 这里记录一下脚本以及参数 : 
+下载的是预编译版 , 所以直接运行 , 配合参数即可 , 这里记录一下脚本以及参数 :
 
-解压之后有两个文件 : client\_linux\_amd64 和 server\_linux\_amd64 , 一个用于服务器 , 一个用于客户端 . 
+解压之后有两个文件 : client\_linux\_amd64 和 server\_linux\_amd64 , 一个用于服务器 , 一个用于客户端 .
 
 **创建start.sh**
 
@@ -90,7 +90,7 @@ echo "Restarting Kcptun..."
 sh start.sh
 ```
 
-sh /root/kcptun/start.sh 启动后 , 就会生成kcptun.log日志文件 . 
+sh /root/kcptun/start.sh 启动后 , 就会生成kcptun.log日志文件 .
 
 **添加开机启动**
 
