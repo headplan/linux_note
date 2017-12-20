@@ -15,6 +15,8 @@
     * [配置](learning_linux/yong-hu-yu-yong-hu-zu/pei-zhi.md)
     * [常用建立用户分配权限](learning_linux/yong-hu-yu-yong-hu-zu/chang-yong-jian-li-yong-hu-fen-pei-quan-xian.md)
     * [Sudoers配置](learning_linux/yong-hu-yu-yong-hu-zu/sudoerspei-zhi.md)
+  * [系统命令](learning_linux/xi-tong-ming-ling.md)
+    * [export](learning_linux/xi-tong-ming-ling/export.md)
 * [系统应用](xi-tong-ying-yong.md)
   * [配置文件](pei-zhi-wen-jian.md)
   * [Linux下" &gt;/dev/null 2&gt;&1 "相关知识说明](ying-4ef6-nei-6838-shell-jian-ce/linux4e0b22-dev-null-2-and-1-xiang-guan-zhi-shi-shuo-ming.md)
@@ -54,7 +56,5 @@
   * [ngrep](ngrep.md)
   * [aaaaa](aaaaa.md)
 * [others](others.md)
-  * [Linux下" &gt;/dev/null 2&gt;&1 "相关知识说明](ying-4ef6-nei-6838-shell-jian-ce/linux4e0b22-dev-null-2-and-1-xiang-guan-zhi-shi-shuo-ming.md)
-
-
+  * [Linux下" &gt;/dev/null 2&gt;&1 "相关知识说明](others/linux4e0b22-dev-null-2-and-1-xiang-guan-zhi-shi-shuo-ming.md)
 
