@@ -32,7 +32,7 @@
   * [SVN服务器搭建](svnfu-wu-qi-da-jian.md)
     * [配置SYNC上线工具](svnfu-wu-qi-da-jian/pei-zhi-sync-shang-xian-gong-ju.md)
   * [Google身份验证器](googleshen-fen-yan-zheng-qi.md)
-* [Oneinstack](oneinstack.md)
+* [OneinStack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
   * [脚本管理](oninstack/jiaoben.md)
