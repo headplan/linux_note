@@ -53,4 +53,8 @@
   * [scp-tool](scp-tool.md)
   * [ngrep](ngrep.md)
   * [aaaaa](aaaaa.md)
+* [others](others.md)
+  * [Linux下" &gt;/dev/null 2&gt;&1 "相关知识说明](ying-4ef6-nei-6838-shell-jian-ce/linux4e0b22-dev-null-2-and-1-xiang-guan-zhi-shi-shuo-ming.md)
+
+
 
