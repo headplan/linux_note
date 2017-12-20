@@ -1,5 +1,15 @@
 # 操作系统
 
+**&lt;Operating Systems: Three Easy Pieces. By Remzi&gt;**
+
+http://pages.cs.wisc.edu/~remzi/OSTEP/ - 官方开源
+
+https://book.douban.com/subject/19973015/
+
+https://github.com/EmbedXj/OperatingSystems.ThreeEasyPieces - 有人翻译
+
+https://www.zhihu.com/question/31863104 - 以上两本是知乎推荐的
+
 **&lt;现代操作系统&gt;\(原书第4版\)**
 
 [https://book.douban.com/subject/27096665/](https://book.douban.com/subject/27096665/)
