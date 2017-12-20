@@ -17,6 +17,7 @@
     * [配置](learning_linux/yong-hu-yu-yong-hu-zu/pei-zhi.md)
     * [常用建立用户分配权限](learning_linux/yong-hu-yu-yong-hu-zu/chang-yong-jian-li-yong-hu-fen-pei-quan-xian.md)
     * [Sudoers配置](learning_linux/yong-hu-yu-yong-hu-zu/sudoerspei-zhi.md)
+  * [Shell脚本](learning_linux/shelljiao-ben.md)
   * [系统命令](learning_linux/xi-tong-ming-ling.md)
     * [export](learning_linux/xi-tong-ming-ling/export.md)
     * [grep](learning_linux/xi-tong-ming-ling/grep.md)
