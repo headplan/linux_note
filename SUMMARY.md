@@ -24,6 +24,8 @@
     * [nmap](learning_linux/ruan-jian-gong-ju/nmap.md)
     * [ctags](learning_linux/ruan-jian-gong-ju/ctags.md)
     * [ngrep](learning_linux/ruan-jian-gong-ju/ngrep.md)
+  * [应用服务](learning_linux/ying-yong-fu-wu.md)
+    * [FastDFS](learning_linux/ying-yong-fu-wu/fastdfs.md)
 * [软件与服务](linux服务.md)
   * [FastDFS](fastdfs.md)
   * [SSH服务](ssh服务.md)
