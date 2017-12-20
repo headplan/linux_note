@@ -1,6 +1,8 @@
-# SSH错误
+# 应用记录
 
-### REMOTE HOST IDENTIFICATION HAS CHANGED 问题解决
+#### SSH错误
+
+REMOTE HOST IDENTIFICATION HAS CHANGED 问题解决
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -18,7 +20,7 @@ RSA host key for ip地址 has changed and you have requested strict checking.
 Host key verification failed.
 ```
 
-#### **先查看**
+**先查看**
 
 ```
 ssh-keygen -l -f ~/.ssh/known_hosts
@@ -26,7 +28,7 @@ ssh-keygen -l -f ~/.ssh/known_hosts
 
 由于服务器重新安装系统了,所以会出现以上错误.
 
-#### 解决办法
+解决办法
 
 ```
 ssh-keygen -R 服务器端的ip地址
