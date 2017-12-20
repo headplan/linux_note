@@ -8,7 +8,7 @@
       * [Linux发展历史](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong/linuxfa-zhan-li-shi.md)
     * [计算机硬件](learning_linux/ji-chu-zhi-shi/ji-suan-ji-ying-jian.md)
   * [系统安装](learning_linux/xi-tong-an-zhuang.md)
-  * 系统基本应用
+  * [系统基本应用](learning_linux/xi-tong-ji-ben-ying-yong.md)
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
     * [概念](learning_linux/yong-hu-yu-yong-hu-zu/gai-nian.md)
     * [文件](learning_linux/yong-hu-yu-yong-hu-zu/wen-jian.md)
