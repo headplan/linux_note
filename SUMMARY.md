@@ -4,6 +4,7 @@
 * [操作系统](cao-zuo-xi-tong.md)
   * [导论](cao-zuo-xi-tong/dao-lun.md)
     * [计算机系统](cao-zuo-xi-tong/dao-lun/ji-suan-ji-xi-tong-de-jie-gou.md)
+      * [加电引导过程](cao-zuo-xi-tong/dao-lun/ji-suan-ji-xi-tong-de-jie-gou/jia-dian-yin-dao-guo-cheng.md)
     * [操作系统](cao-zuo-xi-tong/dao-lun/cao-zuo-xi-tong-de-jie-gou.md)
   * [进程与线程](cao-zuo-xi-tong/jin-cheng-yu-xian-cheng.md)
   * [操作系统三观](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan.md)
