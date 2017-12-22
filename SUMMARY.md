@@ -4,7 +4,8 @@
 * [操作系统](cao-zuo-xi-tong.md)
   * [导论](cao-zuo-xi-tong/dao-lun.md)
     * [计算机系统的结构](cao-zuo-xi-tong/dao-lun/ji-suan-ji-xi-tong-de-jie-gou.md)
-    * 操作系统的结构
+    * [操作系统的结构](cao-zuo-xi-tong/dao-lun/cao-zuo-xi-tong-de-jie-gou.md)
+  * [进程与线程](cao-zuo-xi-tong/jin-cheng-yu-xian-cheng.md)
 * [Linux](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
     * [计算机与操作系统](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong.md)
