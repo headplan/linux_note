@@ -8,6 +8,7 @@
     * [操作系统](cao-zuo-xi-tong/dao-lun/cao-zuo-xi-tong-de-jie-gou.md)
   * [进程与线程](cao-zuo-xi-tong/jin-cheng-yu-xian-cheng.md)
   * [操作系统三观](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan.md)
+    * 虚拟化
 * [Linux](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
     * [计算机与操作系统](learning_linux/ji-chu-zhi-shi/ji-suan-ji-cao-zuo-xi-tong.md)
