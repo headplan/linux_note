@@ -8,7 +8,9 @@
     * [操作系统](cao-zuo-xi-tong/dao-lun/cao-zuo-xi-tong-de-jie-gou.md)
   * [进程与线程](cao-zuo-xi-tong/jin-cheng-yu-xian-cheng.md)
   * [操作系统三观](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan.md)
-    * 虚拟化
+    * [虚拟化](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/xu-ni-hua.md)
+      * [虚拟化CPU](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/xu-ni-hua/xu-ni-hua-cpu.md)
+      * 虚拟化内存
     * 并发
     * 持久性
     * 附录
