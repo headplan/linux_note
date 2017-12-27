@@ -44,9 +44,21 @@
 
 ---
 
-网易云课堂的免费课以及配套实验
+**网易云课堂的免费课以及配套实验**
 
-http://study.163.com/series/1001245004.htm
+[http://study.163.com/series/1001245004.htm](http://study.163.com/series/1001245004.htm)
 
-https://www.shiyanlou.com/courses/115
+[https://www.shiyanlou.com/courses/115](https://www.shiyanlou.com/courses/115)
+
+**MIT6.828 操作系统工程**
+
+https://pdos.csail.mit.edu/6.828/2017/
+
+https://www.bilibili.com/video/av15896196/
+
+https://github.com/bysui/mit6.828
+
+https://github.com/deyuhua/xv6-book-chinese
+
+http://www.cnblogs.com/bdhmwz/
 
