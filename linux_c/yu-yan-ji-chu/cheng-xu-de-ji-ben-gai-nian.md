@@ -22,11 +22,17 @@ C语言的语句和低级语言的指令之间不是简单的一一对应关系 
 
 **解释执行过程**
 
-有些高级语言以**解释**\(Interpret\)的方式执行 , 解释执行的过程和C语言的编译执行过程很不一 样 , 例如写一个Python源代码 , 保存成program.py\(通常Python程序的文件名后缀是.py\) , 然后并不需要生成目标代码 , 而是直接运行解释器\(Interpreter\)执行该源代码,解释器是一行 一行地翻译源代码 , 边翻译边执行的 : 
+有些高级语言以**解释**\(Interpret\)的方式执行 , 解释执行的过程和C语言的编译执行过程很不一 样 , 例如写一个Python源代码 , 保存成program.py\(通常Python程序的文件名后缀是.py\) , 然后并不需要生成目标代码 , 而是直接运行解释器\(Interpreter\)执行该源代码,解释器是一行 一行地翻译源代码 , 边翻译边执行的 :
 
 ![](/assets/jieshizhixingguocheng.png)
 
+以上介绍的
 
+机器语言称为第一代语言\(1GL,1st Generation Programming Language\)
 
+汇编语言称为第二代语言\(2GL,2nd Generation Programming Language\)
 
+C、C++、Java、Python等可以称为第三代语言\(3GL,3rd Generation Programming Language\)
+
+后面还有4GL和5GL的概念 , 语言主要不是通过输入、输出、基本运算、测试分支和循环这些基本指令来编程的 , 语言更多是在描述要做什么\(Declarative\)而不是描述具体一步一步怎么做 \(Imperative\) , 具体一步一步怎么做完全交由编译器或解释器决定 , 例如SQL语言 \(SQL,Structured Query Language , 结构化查询语言\)就是这样的例子 . 
 
