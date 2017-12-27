@@ -52,6 +52,7 @@
     * [Shadowsocks](learning_linux/ying-yong-fu-wu/shadowsocks.md)
       * [Kcptun](learning_linux/ying-yong-fu-wu/shadowsocks/kcptun.md)
 * [Linux C](linux_c.md)
+  * [语言基础](linux_c/yu-yan-ji-chu.md)
 * [OneinStack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
