@@ -42,3 +42,11 @@
 
 [https://book.douban.com/subject/4289836/](https://book.douban.com/subject/4289836/)
 
+---
+
+网易云课堂的免费课以及配套实验
+
+http://study.163.com/series/1001245004.htm
+
+https://www.shiyanlou.com/courses/115
+
