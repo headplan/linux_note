@@ -55,6 +55,7 @@
   * [语言基础](linux_c/yu-yan-ji-chu.md)
     * [程序的基本概念](linux_c/yu-yan-ji-chu/cheng-xu-de-ji-ben-gai-nian.md)
     * [关于C语言](linux_c/yu-yan-ji-chu/guan-yu-c-yu-yan.md)
+    * [环境设置与第一个程序](linux_c/yu-yan-ji-chu/huan-jing-she-zhi-yu-di-yi-ge-cheng-xu.md)
 * [OneinStack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
