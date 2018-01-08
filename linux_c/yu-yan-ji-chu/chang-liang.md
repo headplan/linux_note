@@ -68,20 +68,20 @@ printf中的字符串称为格式化字符串\(Format String\) , 它规定了后
 
 ```c
 #include <stdio.h>
- 
+
 #define LENGTH 10   
 #define WIDTH  5
 #define NEWLINE '\n'
- 
+
 int main()
 {
- 
+
    int area;  
-  
+
    area = LENGTH * WIDTH;
    printf("value of area : %d", area);
    printf("%c", NEWLINE);
- 
+
    return 0;
 }
 ```
@@ -90,21 +90,25 @@ int main()
 
 ```c
 #include <stdio.h>
- 
+
 int main()
 {
    const int  LENGTH = 10;
    const int  WIDTH  = 5;
    const char NEWLINE = '\n';
    int area;  
-   
+
    area = LENGTH * WIDTH;
    printf("value of area : %d", area);
    printf("%c", NEWLINE);
- 
+
    return 0;
 }
 ```
+
+> \#define是宏定义 , 它不能定义常量 , 但宏定义可以实现在字面意义上和其它定义常量相同的功能 , 本质的区别就在于\#define不为宏名分配内存 . 
+>
+> 而const也不为常量分配内存 , 其实const并不是去定义一个常量 , 而是去改变一个变量的存储类 , 把该变量所占的内存变为只读 .
 
 
 
