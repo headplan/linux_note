@@ -59,7 +59,7 @@
     * [基本语法](linux_c/yu-yan-ji-chu/ji-ben-yu-fa.md)
     * [常量](linux_c/yu-yan-ji-chu/chang-liang.md)
     * [变量](linux_c/yu-yan-ji-chu/bian-liang.md)
-    * 赋值与表达式
+    * [赋值与表达式](linux_c/yu-yan-ji-chu/fu-zhi-yu-biao-da-shi.md)
     * 字符类型与编码
   * 分支语句
   * 循环语句
