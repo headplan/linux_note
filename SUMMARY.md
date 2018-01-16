@@ -63,6 +63,9 @@
     * 字符类型与编码
   * 分支语句
   * 循环语句
+  * 函数
+  * 结构体
+  * 数组
 * [OneinStack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
