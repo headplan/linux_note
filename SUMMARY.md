@@ -27,6 +27,7 @@
     * [系统烧录](learning_linux/xi-tong-an-zhuang/xi-tong-shao-lu.md)
   * [基本应用](learning_linux/xi-tong-ji-ben-ying-yong.md)
     * [原理与实战](learning_linux/xi-tong-ji-ben-ying-yong/yuan-li-yu-shi-zhan.md)
+    * [文件组织结构](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou.md)
     * [配置文件](learning_linux/xi-tong-ji-ben-ying-yong/pei-zhi-wen-jian.md)
   * [Shell脚本](learning_linux/shelljiao-ben.md)
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
@@ -61,9 +62,9 @@
     * [常量](linux_c/yu-yan-ji-chu/chang-liang.md)
     * [变量](linux_c/yu-yan-ji-chu/bian-liang.md)
     * [赋值与表达式](linux_c/yu-yan-ji-chu/fu-zhi-yu-biao-da-shi.md)
-    * 字符类型与编码
-  * 分支语句
-  * 循环语句
+    * [字符类型与编码](linux_c/yu-yan-ji-chu/zi-fu-lei-xing-yu-bian-ma.md)
+  * [分支语句](linux_c/fen-zhi-yu-ju.md)
+  * [循环语句](linux_c/xun-huan-yu-ju.md)
   * 函数
   * 结构体
   * 数组
