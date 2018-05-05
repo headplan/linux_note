@@ -26,7 +26,7 @@
   * [系统安装](learning_linux/xi-tong-an-zhuang.md)
     * [系统烧录](learning_linux/xi-tong-an-zhuang/xi-tong-shao-lu.md)
   * [基本应用](learning_linux/xi-tong-ji-ben-ying-yong.md)
-    * [原理与实战](learning_linux/xi-tong-ji-ben-ying-yong/yuan-li-yu-shi-zhan.md)
+    * [启动过程](learning_linux/xi-tong-ji-ben-ying-yong/yuan-li-yu-shi-zhan.md)
     * [文件组织结构](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou.md)
       * [/dev目录](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou/devmu-lu.md)
       * [/etc目录](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou/etcmu-lu.md)
