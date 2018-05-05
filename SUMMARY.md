@@ -13,9 +13,9 @@
       * [虚拟化CPU](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/xu-ni-hua/xu-ni-hua-cpu.md)
         * [进程](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/xu-ni-hua/xu-ni-hua-cpu/jin-cheng.md)
       * 虚拟化内存
-    * 并发
-    * 持久性
-    * 附录
+    * [并发](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/bing-fa.md)
+    * [持久性](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/chi-jiu-xing.md)
+    * [附录](cao-zuo-xi-tong/cao-zuo-xi-tong-san-guan/fu-lu.md)
     * 扩展阅读
 * [Linux](learning_linux.md)
   * [基础知识](learning_linux/ji-chu-zhi-shi.md)
