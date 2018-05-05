@@ -63,7 +63,7 @@ drwxr-xr-x.  22 root root  4096 Aug 24 03:33 var
 
 `/opt` - 这里主要存放那些可选的程序 . 给主机额外安装软件所摆放的目录 . 如:FC4使用的Fedora 社群开发软件 , 如果想要自行安装新的KDE 桌面软件 , 可以将该软件安装在该目录下 . 以前的 Linux 系统中 , 习惯放置在 /usr/local 目录下 .
 
-`/proc` - 可以在这个目录下获取系统信息 . 这些信息是在内存中 , 由系统自己产生的 . 如系统核心 , 外部设备 , 网络状态 , 由于数据都存放于内存中 , 所以不占用磁盘空间 . 
+`/proc` - 可以在这个目录下获取系统信息 . 这些信息是在内存中 , 由系统自己产生的 . 如系统核心 , 外部设备 , 网络状态 , 由于数据都存放于内存中 , 所以不占用磁盘空间 .
 
 * /proc/cpuinfo
 * /proc/interrupts
@@ -71,26 +71,26 @@ drwxr-xr-x.  22 root root  4096 Aug 24 03:33 var
 * /proc/ioports
 * /proc/net/\*
 
-`/root` - Linux超级权限用户root的家目录 . 
+`/root` - Linux超级权限用户root的家目录 .
 
-`/sbin` - 这个目录是用来存放系统管理员的系统管理程序 System Binary . 大多是涉及系统管理的命令的存放 , 如fdisk、shutdown、mount等 , 是超级权限用户root的可执行命令存放地 , 普通用户无权限执行这个目录下的命令 , 这个目录和/usr/sbin; /usr/X11R6/sbin或/usr/local/sbin目录是相似的，凡是目录sbin中包含的都是root权限才能执行的 . 而/bin目录中的命令和可执行文件普通用户也可以用 . 
+`/sbin` - 这个目录是用来存放系统管理员的系统管理程序 System Binary . 大多是涉及系统管理的命令的存放 , 如fdisk、shutdown、mount等 , 是超级权限用户root的可执行命令存放地 , 普通用户无权限执行这个目录下的命令 , 这个目录和/usr/sbin; /usr/X11R6/sbin或/usr/local/sbin目录是相似的，凡是目录sbin中包含的都是root权限才能执行的 . 而/bin目录中的命令和可执行文件普通用户也可以用 .
 
-`/selinux` - 对SElinux的一些配置文件目录 , SElinux可以让linux更加安全 . 
+`/selinux` - 对SElinux的一些配置文件目录 , SElinux可以让linux更加安全 .
 
-`/srv` - 服务启动后 , 所需访问的数据目录 , 举个例子来说 , www服务启动读取的网页数据就可以放在`/srv/www`中 . 
+`/srv` - 服务启动后 , 所需访问的数据目录 , 举个例子来说 , www服务启动读取的网页数据就可以放在`/srv/www`中 .
 
-`/sys` - Linux 内核中设计较新的一种虚拟的基于内存的文件系统 , 它的作用与 proc 有些类似 , 但除了与 proc 相同的具有查看和设定内核参数功能之外 , 还有为 Linux 统一设备模型作为管理之用 .  　
+`/sys` - Linux 内核中设计较新的一种虚拟的基于内存的文件系统 , 它的作用与 proc 有些类似 , 但除了与 proc 相同的具有查看和设定内核参数功能之外 , 还有为 Linux 统一设备模型作为管理之用 .
 
-`/tmp` - 临时文件目录 , 用来存放不同程序执行时产生的临时文件 . 有时用户运行程序的时候 , 会产生临时文件 . `/tmp`就用来存放临时文件的 . `/var/tmp`目录和这个目录相似 .  　
+`/tmp` - 临时文件目录 , 用来存放不同程序执行时产生的临时文件 . 有时用户运行程序的时候 , 会产生临时文件 . `/tmp`就用来存放临时文件的 . `/var/tmp`目录和这个目录相似 .
 
-`/usr` - \(Unix System Resource\)这是linux系统中占用硬盘空间最大的目录 . 用户的很多应用程序和文件都存放在这个目录下 . 在这个目录下 , 可以找到那些不适合放在/bin或/etc目录下的额外的工具 . 
+`/usr` - \(Unix System Resource\)这是linux系统中占用硬盘空间最大的目录 . 用户的很多应用程序和文件都存放在这个目录下 . 在这个目录下 , 可以找到那些不适合放在/bin或/etc目录下的额外的工具 .
 
 * `/usr/bin` - 存放应用程序
 * `/usr/lib` - 存放不能直接运行的 , 却是许多程序运行所必需的一些函数库文件
 * `/usr/local` - 这里主要存放那些手动安装的软件 , 即不是通过“新立得”或apt-get安装的软件 . 它和/usr目录具有相类似的目录结构 . 让软件包管理器来管理/usr目录 , 而把自定义的脚本\(scripts\)放到/usr/local目录下面 . 　　
 * `/usr/share` - 存放共享数据 . 比如 /usr/share/fonts 是字体目录 , /usr/share/doc和/usr/share/man帮助文件 .
 * `/usr/share/doc` - 系统说明文件存放目录
-* _`/usr/share/man` - _程序说明文件存放目录 , 使用 man ls时会查询/usr/share/man/man1/ls.1.gz的内容
+* `/usr/share/man`_ - _程序说明文件存放目录 , 使用 man ls时会查询/usr/share/man/man1/ls.1.gz的内容
 
-
+`/var` - 这个目录的内容是经常变动的 , 可以理解为vary的缩写 , /var下有/var/log 这是用来存放系统日志的目录 , /var/ www目录是定义Apache服务器站点存放目录 , /var/lib 用来存放一些库文件 , 比如MySQL的 , 以及MySQL数据库的的存放地 . 
 
