@@ -26,6 +26,7 @@
   * [系统安装](learning_linux/xi-tong-an-zhuang.md)
     * [系统烧录](learning_linux/xi-tong-an-zhuang/xi-tong-shao-lu.md)
   * [基本应用](learning_linux/xi-tong-ji-ben-ying-yong.md)
+    * [原理与实战](learning_linux/xi-tong-ji-ben-ying-yong/yuan-li-yu-shi-zhan.md)
   * [配置文件](learning_linux/pei-zhi-wen-jian.md)
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
     * [概念](learning_linux/yong-hu-yu-yong-hu-zu/gai-nian.md)
