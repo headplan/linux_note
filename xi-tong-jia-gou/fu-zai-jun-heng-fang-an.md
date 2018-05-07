@@ -8,9 +8,17 @@
 
 **软件**
 
-Nginx、HAProxy、LVS等 . 
+Nginx、HAProxy、LVS等 .
 
 ![](/assets/fuzaijunhengfangan.png)
+
+**LVS可以完全替代DNS轮询么?**
+
+DNS轮询究竟是不是过时的技术 , 是不是可以被其他方案替代?
+
+不管是使用lvs还是f5 , 根本上还是会有性能上限 , 假设每秒能处理10w的请求 , 一天也只能处理80亿的请求\(10w秒吞吐量\*8w秒\) , 那万一系统的日PV超过80亿怎么办呢?
+
+facebook , google的PV是不是超过80亿呢 , 它们的域名只对应一个ip么 , 还是得通过DNS轮询来进行扩容 . 
 
 
 
