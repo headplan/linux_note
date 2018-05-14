@@ -11,7 +11,7 @@
 
 % 取模（取余）运算符
 
-自增自减运算符 ++   -- 
+自增自减运算符 ++   --
 ```
 
 #### 基本运算符
@@ -30,10 +30,13 @@
 预处理（Pre-Processing）
 #include #define
 
-编译（Compiling）
+编译（Compiling）gcc -c test.c 最后生成.o文件,也就是目标文件,obj .o
 
-目标文件,obj .o
-链接（Linking）
+执行 gcc test.o
+整合编译文件和外部代码,也就是链接（Linking）
+
+生成a.out文件,默认可执行文件.
+
 ```
 
 
