@@ -25,7 +25,15 @@ gcc version 4.1.2 20080704 (Red Hat 4.1.2-46)
 
 安装 : [http://gcc.gnu.org/install/](http://gcc.gnu.org/install/)
 
+```
+# 腾讯云测试环境
+yum install gcc
+```
+
 #### 第一个程序
+
+* C语言的代码是由函数\(Function\)组成的
+* 函数就是一个代码块\(block\)
 
 打印Hello, World.
 
@@ -35,16 +43,18 @@ gcc version 4.1.2 20080704 (Red Hat 4.1.2-46)
 int main()
 {
     printf("Hello, World.\n");
+    return 0;
 }
 ```
 
 * 程序的第一行 `#include <stdio.h>` 是预处理器指令，告诉 C 编译器在实际编译之前要包含 stdio.h 文件。
-* 下一行 `int main()` 是主函数，程序从这里开始执行。
+* stdio.h是一个C语言的标准输入输出库 , .h表示头文件 . 
+* 下一行 `int main()` 是主函数，程序从这里开始执行 , int是函数的返回类型 , int整形 . 
 * 下一行 `/*...*/` 将会被编译器忽略，这里放置程序的注释内容。它们被称为程序的注释。
-* 下一行 `printf(...)` 是 C 中另一个可用的函数，会在屏幕上显示消息 "Hello, World!"。
+* 下一行 `printf(...)` 是 C 中另一个可用的函数，会在屏幕上显示消息 "Hello, World!" , 就是stdio库的函数 . 这里的字符串必须是双引号 , 因为是强类型语言 . 
 * 下一行 `return 0;` 终止 main\(\) 函数，并返回值 0。
 
-C 程序主要包括 : 
+C 程序主要包括 :
 
 * 预处理器指令
 * 函数
@@ -54,13 +64,10 @@ C 程序主要包括 :
 
 **编译 & 执行**
 
-```
-$ gcc hello.c
-$ ./a.out
-Hello, World!
-```
-
-也可以只用gcc的-o参数指定文件名
+* GCC - GNU C compiler是最广泛使用的编译器之一 . 
+* Unix系操作系统（Unix，Linux，Mac OSX）的主要编译器
+* .c源程序--&gt;经过编译器编译--&gt;可执行程序
+* gcc hello.c -o hello , gcc是命令 , hello.c表示源文件的名字 , -o表示编译成一个输出的程序 , 结尾表示可执行程序的名字
 
 ```
 $ gcc -o hello hello.c
@@ -70,7 +77,7 @@ Hello, World!
 
 #### 产生错误
 
-例如 , `#include <stdio.c>`编译时报错error : 
+例如 , `#include <stdio.c>`编译时报错error :
 
 ```
 hello.c:1:10: fatal error: 'stdio.c' file not found
@@ -79,7 +86,7 @@ hello.c:1:10: fatal error: 'stdio.c' file not found
 1 error generated.
 ```
 
-例如 , `printf(1)`编译警告warning : 
+例如 , `printf(1)`编译警告warning :
 
 ```
 hello.c:5:12: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
@@ -87,7 +94,7 @@ hello.c:5:12: warning: incompatible integer to pointer conversion passing 'int' 
            ^
 ```
 
-例如 , `printf(0)`编辑时看不到错误或警告 , 但执行时会提示故障 . 显示编译错误细节 , 可以使用gcc的-Wall参数 : 
+例如 , `printf(0)`编辑时看不到错误或警告 , 但执行时会提示故障 . 显示编译错误细节 , 可以使用gcc的-Wall参数 :
 
 ```
 $ gcc -W -Wall hello.c

@@ -71,9 +71,9 @@
     * [字符类型与编码](linux_c/yu-yan-ji-chu/zi-fu-lei-xing-yu-bian-ma.md)
   * [分支语句](linux_c/fen-zhi-yu-ju.md)
   * [循环语句](linux_c/xun-huan-yu-ju.md)
-  * 函数
-  * 结构体
-  * 数组
+  * [函数](linux_c/han-shu.md)
+  * [结构体](linux_c/jie-gou-ti.md)
+  * [数组](linux_c/shu-zu.md)
 * [OneinStack](oneinstack.md)
   * [安装](oninstack/anzhuang.md)
   * [软件应用](oninstack/yingyong.md)
