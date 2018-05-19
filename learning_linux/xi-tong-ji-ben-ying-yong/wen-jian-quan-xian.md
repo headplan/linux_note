@@ -8,9 +8,9 @@
 * group : 所属的用户组
 * others : 其他人
 
-每个文件或目录有三种基本权限类型 : 
+每个文件或目录有三种基本权限类型 :
 
 ![](/assets/qianxianleixing.png)
 
-
+![](/assets/quanxianleixing2.png)
 
