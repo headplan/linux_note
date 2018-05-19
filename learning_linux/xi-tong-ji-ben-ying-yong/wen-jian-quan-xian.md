@@ -111,5 +111,52 @@ chmod 1xxx dir1
 
 具有sticky属性的目录为`drwxrwxrwt`。
 
+---
+
+#### 带着问题去看 , 为什么普通用户可以执行passwd , 修改/etc/passwd ? 
+
+```
+-rw-r--r-- 1 root root 1787 Oct 27  2018 /etc/passwd
+-r-------- 1 root root 1187 Oct 27  2018 /etc/shadow
+```
+
+/etc/passwd文件每个用户都有读权限但是只有root有写权限 , /etc/shadow文件只有超级用户root有读写权限 , 也就是说普通用户对这两个文件都没有写权限无法写入新密码 , 为什么普通用户可以更改密码呢 ? 
+
+其实 , 用户能更改密码真正的秘密不在于文件的权限 , 而在于更改密码的命令passwd : 
+
+```
+-rwsr-xr-x 1 root root 22960 Jul 17 2018 /usr/bin/passwd
+```
+
+可以看到s标记 , 也就是setuid权限 . 
+
+在来几个例子 , 普通用户headplan使用touch命令创建一个文件 : 
+
+```
+touch myfile
+ls -l myfile
+-rw-rw-r-- 1 headplan headplan 0 05-21 01:20 myfile
+```
+
+使用root给touch命令添加SetUID权限 : 
+
+```
+chmod u+s /bin/touch   
+# chmod 4755 /bin/touch
+
+ls -l /bin/touch
+-rwsr-xr-x 1 root root 42284 Jul 13  2018 /bin/touch
+```
+
+现在 , 再用普通用户headplan创建文件 : 
+
+```
+touch myfile1
+ls -l myfile1
+-rw-rw-r-- 1 root headplan 0 05-21 01:48 myfile1
+```
+
+当一个可执行文件\(命令touch\)设置SetUID权限后 , 当普通用户headplan执行touch创建新文件时 , 实际上是以touch命令所有者root的身份在执行此操作 , 既然是以root身份执行 , 当然新建文件的所有者为root , 这就是SetUID的作用 . 
+
 
 
