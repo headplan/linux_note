@@ -82,5 +82,34 @@ ls -l 文件名
 
 第三个是sticky位，八进制表示位1000，它是从UNIX中继承下来的，在LINUX中将会忽略文件的sticky位。但是对一个目录设置sticky位，那么将能**阻止用户删除或者重命名文件，除非用户是这个目录的所有者、文件所有者或者超级用户。它通常用来控制对共享目录（例如/tmp）的访问。设置该位后, 就算用户对目录具有写权限, 也不能删除该文件**
 
+#### 特殊权限的设置
+
+**授予setuid权限**
+
+```
+chmod u+s prog1
+chmod 4xxx prog1
+```
+
+具有setuid属性的程序为`-rwsr-xr-x`。
+
+**授予setgid权限**
+
+```
+chmod g+s dir1
+chmod 2xxx dir1
+```
+
+具有setgid属性的目录为`drwxrwsr-x`。
+
+**授予sticky权限**
+
+```
+chmod t dir1
+chmod 1xxx dir1
+```
+
+具有sticky属性的目录为`drwxrwxrwt`。
+
 
 
