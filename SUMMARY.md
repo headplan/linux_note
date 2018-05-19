@@ -37,6 +37,7 @@
     * [配置文件](learning_linux/xi-tong-ji-ben-ying-yong/pei-zhi-wen-jian.md)
     * [文件权限](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-quan-xian.md)
       * [管理文件权限命令](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-quan-xian/guan-li-wen-jian-quan-xian-ming-ling.md)
+      * [chattr与lsattr命令](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-quan-xian/chattryu-lsattr-ming-ling.md)
   * [Shell脚本](learning_linux/shelljiao-ben.md)
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
     * [概念](learning_linux/yong-hu-yu-yong-hu-zu/gai-nian.md)
