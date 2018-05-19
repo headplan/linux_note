@@ -35,6 +35,7 @@
       * [/var目录](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou/varmu-lu.md)
       * [重要目录](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-zu-zhi-jie-gou/zhong-yao-mu-lu.md)
     * [配置文件](learning_linux/xi-tong-ji-ben-ying-yong/pei-zhi-wen-jian.md)
+    * [文件权限](learning_linux/xi-tong-ji-ben-ying-yong/wen-jian-quan-xian.md)
   * [Shell脚本](learning_linux/shelljiao-ben.md)
   * [用户与用户组](learning_linux/yong-hu-yu-yong-hu-zu.md)
     * [概念](learning_linux/yong-hu-yu-yong-hu-zu/gai-nian.md)
