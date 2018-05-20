@@ -48,7 +48,7 @@ chattr +a /var/log/access_log
 chattr +a /data/user_act.log
 ```
 
-查看属性 : 
+查看属性 :
 
 ```
 lsattr /etc/php.ini
