@@ -21,6 +21,7 @@ iptables -nvL
 iptables -nvL INPUT --line-numbers
 # 删除指定的第4行规则
 iptables -D INPUT 4
+service iptables save
 ```
 
 ### 关于PHP缓存
