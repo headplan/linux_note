@@ -17,6 +17,10 @@ iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 8080  -j ACCEPT
 service iptables save
 # 查看iptables规则
 iptables -nvL
+# 列出INPUT的所有的规则
+iptables -nvL INPUT --line-numbers
+# 删除指定的第4行规则
+iptables -D INPUT 4
 ```
 
 ### 关于PHP缓存
