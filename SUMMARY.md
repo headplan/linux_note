@@ -84,6 +84,7 @@
   * [环境优化](oninstack/youhua.md)
   * [HTTPS部署](oninstack/httpspei-zhi.md)
   * [fail2ban监控](oninstack/fail2banjian-kong.md)
+  * [MySQL读写分离基本配置](oninstack/mysqldu-xie-fen-li-ji-ben-pei-zhi.md)
 * [Vagrant](vagrant.md)
   * [简介](vagrant/jian-jie.md)
   * [安装与使用](vagrant/an-zhuang-yu-shi-yong.md)

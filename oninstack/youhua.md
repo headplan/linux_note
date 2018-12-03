@@ -68,7 +68,7 @@ ls #看到no-debug-non-zts-20131226类似文件夹
 cd no-debug-zts-20131226
 ls #查看有没有 fileinfo.so,如果有，证明编译成功
 #加载fileinfo
-echo 'extension = /usr/local/php56/lib/php/extensions/no-debug-non-zts-20121212/fileinfo.so' > /usr/local/php/etc/php.d/ext-fileinfo.ini
+echo 'extension = /usr/local/php/lib/php/extensions/no-debug-non-zts-20170718/fileinfo.so' > /usr/local/php/etc/php.d/ext-fileinfo.ini
 ```
 
 ### 关于PHP多版本共存
