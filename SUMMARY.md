@@ -105,4 +105,5 @@
   * [数据库读写分离](xi-tong-jia-gou/shu-ju-ku-du-xie-fen-li.md)
 * [性能优化](xing-neng-you-hua.md)
   * [CPU性能](xing-neng-you-hua/cpuxing-neng.md)
+    * [平均负载](xing-neng-you-hua/cpuxing-neng/ping-jun-fu-zai.md)
 
