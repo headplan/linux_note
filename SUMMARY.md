@@ -104,4 +104,5 @@
   * [负载均衡方案](xi-tong-jia-gou/fu-zai-jun-heng-fang-an.md)
   * [数据库读写分离](xi-tong-jia-gou/shu-ju-ku-du-xie-fen-li.md)
 * [性能优化](xing-neng-you-hua.md)
+  * [CPU性能](xing-neng-you-hua/cpuxing-neng.md)
 
