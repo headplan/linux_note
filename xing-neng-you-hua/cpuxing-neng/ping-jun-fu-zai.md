@@ -76,6 +76,8 @@ $ grep 'model name' /proc/cpuinfo | wc -l
 
 stress是一个Linux系统压力测试工具 , 这里用作异常进程模拟平均负载升高的场景 .
 
+http://people.seas.harvard.edu/~apw/stress/
+
 ```
 # yum安装
 yum install -y epel-release
@@ -83,7 +85,6 @@ yum install -y stress
 ```
 
 ```
-http://people.seas.harvard.edu/~apw/stress/
 # 下载解压
 ./configure
 make
@@ -93,7 +94,9 @@ make install
 
 **sysstat**
 
-sysstat包含了常用的Linux性能工具 , 用来监控和分析系统的性能 . 
+sysstat包含了常用的Linux性能工具 , 用来监控和分析系统的性能 .
+
+https://github.com/sysstat/sysstat
 
 ```
 git clone git://github.com/sysstat/sysstat
@@ -102,6 +105,10 @@ cd sysstat
 make
 make install
 ```
+
+这里用到sysstat包中的两个命令 : 
+
+mpstat
 
 
 
