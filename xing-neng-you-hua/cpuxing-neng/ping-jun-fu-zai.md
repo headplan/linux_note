@@ -70,5 +70,23 @@ $ grep 'model name' /proc/cpuinfo | wc -l
 
 #### 平均负载案例分析
 
+**工具准备**
+
+**stress**
+
+```
+# yum安装
+yum install -y epel-release
+yum install -y stress
+```
+
+```
+http://people.seas.harvard.edu/~apw/stress/
+# 下载解压
+./configure
+make
+make install
+```
+
 
 
