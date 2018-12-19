@@ -86,6 +86,7 @@ http://people.seas.harvard.edu/~apw/stress/
 ./configure
 make
 make install
+# 默认安装在:/usr/local/bin/stress
 ```
 
 
