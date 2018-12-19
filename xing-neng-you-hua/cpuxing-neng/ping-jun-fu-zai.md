@@ -74,6 +74,8 @@ $ grep 'model name' /proc/cpuinfo | wc -l
 
 **stress**
 
+stress是一个Linux系统压力测试工具 , 这里用作异常进程模拟平均负载升高的场景 . 
+
 ```
 # yum安装
 yum install -y epel-release
