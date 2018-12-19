@@ -74,7 +74,7 @@ $ grep 'model name' /proc/cpuinfo | wc -l
 
 **stress**
 
-stress是一个Linux系统压力测试工具 , 这里用作异常进程模拟平均负载升高的场景 . 
+stress是一个Linux系统压力测试工具 , 这里用作异常进程模拟平均负载升高的场景 .
 
 ```
 # yum安装
@@ -92,6 +92,8 @@ make install
 ```
 
 **sysstat**
+
+sysstat包含了常用的Linux性能工具 , 用来监控和分析系统的性能 . 
 
 ```
 git clone git://github.com/sysstat/sysstat
