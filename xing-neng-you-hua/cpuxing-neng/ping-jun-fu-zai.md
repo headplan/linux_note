@@ -89,5 +89,15 @@ make install
 # 默认安装在:/usr/local/bin/stress
 ```
 
+**sysstat**
+
+```
+git clone git://github.com/sysstat/sysstat
+cd sysstat
+./configure --enable-install-cron
+make
+make install
+```
+
 
 
