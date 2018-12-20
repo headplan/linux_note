@@ -76,7 +76,7 @@ $ grep 'model name' /proc/cpuinfo | wc -l
 
 stress是一个Linux系统压力测试工具 , 这里用作异常进程模拟平均负载升高的场景 .
 
-http://people.seas.harvard.edu/~apw/stress/
+[http://people.seas.harvard.edu/~apw/stress/](http://people.seas.harvard.edu/~apw/stress/)
 
 ```
 # yum安装
@@ -96,7 +96,7 @@ make install
 
 sysstat包含了常用的Linux性能工具 , 用来监控和分析系统的性能 .
 
-https://github.com/sysstat/sysstat
+[https://github.com/sysstat/sysstat](https://github.com/sysstat/sysstat)
 
 ```
 git clone git://github.com/sysstat/sysstat
@@ -106,9 +106,33 @@ make
 make install
 ```
 
-这里用到sysstat包中的两个命令 : 
+这里用到sysstat包中的两个命令 :
 
-mpstat
+* **mpstat**是一个常用的多核CPU性能分析工具 , 用来实时查看每个CPU的性能指标 , 以及所有CPU的平均指标 . 
+* **pidstat**是一个常用的进程性能分析工具 , 用来实时查看进程的CPU , 内存 , I/O以及上下文切换等性能指标 . 
+
+---
+
+记录测试前的平均负载情况 : 
+
+```
+uptime
+11:28:02 up 1 day,  2:55,  1 user,  load average: 0.00, 0.01, 0.05
+```
+
+**场景一 : CPU密集型进程**
+
+模拟一个CPU使用率100%的场景
+
+```
+$ stress --cpu 1 --timeout 600
+```
+
+在第二个终端运行uptime查看平均负载的变化情况
+
+```
+$ watch -d uptime
+```
 
 
 
