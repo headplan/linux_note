@@ -113,7 +113,7 @@ make install
 
 ---
 
-记录测试前的平均负载情况 : 
+记录测试前的平均负载情况 :
 
 ```
 uptime
@@ -131,7 +131,15 @@ $ stress --cpu 1 --timeout 600
 在第二个终端运行uptime查看平均负载的变化情况
 
 ```
+# -d 参数表示高亮显示变化的区域
 $ watch -d uptime
+```
+
+在第三个终端运行mpstat查看CPU使用率的变化情况
+
+```
+# -P ALL 表示监控所有 CPU,后面数字 5 表示间隔 5 秒后输出一组数据
+$ mpstat -P ALL 5
 ```
 
 
