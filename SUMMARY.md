@@ -49,6 +49,7 @@
     * [export](learning_linux/xi-tong-ming-ling/export.md)
     * [grep](learning_linux/xi-tong-ming-ling/grep.md)
     * [scp](learning_linux/xi-tong-ming-ling/scp.md)
+    * [watch](learning_linux/xi-tong-ming-ling/watch.md)
   * [软件工具](learning_linux/ruan-jian-gong-ju.md)
     * [nmap](learning_linux/ruan-jian-gong-ju/nmap.md)
     * [ctags](learning_linux/ruan-jian-gong-ju/ctags.md)
