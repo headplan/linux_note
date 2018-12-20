@@ -109,4 +109,5 @@
 * [性能优化](xing-neng-you-hua.md)
   * [CPU性能](xing-neng-you-hua/cpuxing-neng.md)
     * [平均负载](xing-neng-you-hua/cpuxing-neng/ping-jun-fu-zai.md)
+    * [CPU上下文切换](xing-neng-you-hua/cpuxing-neng/cpushang-xia-wen-qie-huan.md)
 
