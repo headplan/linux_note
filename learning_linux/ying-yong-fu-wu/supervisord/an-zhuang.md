@@ -54,9 +54,9 @@ echo_supervisord_conf > /etc/supervisord.conf
 ;    "command=bash -c 'foo ; bar'" will truncate to "command=bash -c 'foo ".
 
 [unix_http_server]
-file=/tmp/supervisor.sock   ; the path to the socket file
-;chmod=0700                 ; socket file mode (default 0700)
-;chown=nobody:nogroup       ; socket file uid:gid owner
+file=/tmp/supervisor.sock   ; UNIX socket文件,supervisorctl会使用
+;chmod=0700                 ; socket文件的mode,默认是 0700
+;chown=nobody:nogroup       ; socket文件的owner,格式 uid:gid
 ;username=user              ; default is no username (open server)
 ;password=123               ; default is no password (open server)
 
