@@ -109,8 +109,8 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ; supervisor.
 
 ;[program:theprogramname]
-;command=/bin/cat              ; the program (relative uses PATH, can take args)
-;process_name=%(program_name)s ; process_name expr (default %(program_name)s)
+;command=/bin/cat              ; 程序的启动命令(使用绝对路径)
+;process_name=%(program_name)s ; process_name表示(默认是 %(program_name)s)
 ;numprocs=1                    ; number of processes copies to start (def 1)
 ;directory=/tmp                ; directory to cwd to before exec (def no cwd)
 ;umask=022                     ; umask for process (default None)
