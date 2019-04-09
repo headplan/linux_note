@@ -98,7 +98,7 @@ supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
 
 [supervisorctl]
 serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路径与unix_http_server部分的file一致
-;serverurl=http://127.0.0.1:9001 ; use an http:// url to specify an inet socket
+;serverurl=http://127.0.0.1:9001 ; 通过HTTP的方式连接supervisord
 ;username=chris              ; should be same as in [*_http_server] if set
 ;password=123                ; should be same as in [*_http_server] if set
 ;prompt=mysupervisor         ; cmd line prompt (default "supervisor")
