@@ -104,8 +104,8 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ;prompt=mysupervisor         ; cmd line prompt (default "supervisor")
 ;history_file=~/.sc_history  ; use readline history if available
 
-; The sample program section below shows all possible program subsection values.
-; Create one or more 'real' program: sections to be able to control them under
+; 以下是被管理的示例程序显示所有可能用到的配置
+; 创建一个或多个程序:要遵循以下的键值对规则
 ; supervisor.
 
 ;[program:theprogramname]
