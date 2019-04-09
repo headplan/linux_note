@@ -66,23 +66,25 @@ file=/tmp/supervisor.sock   ; UNIX socket文件,supervisorctl会使用
 ;password=123               ; 登录管理后台的密码 (open server)
 
 [supervisord]
-logfile=/tmp/supervisord.log ; main log file; default $CWD/supervisord.log
-logfile_maxbytes=50MB        ; max main logfile bytes b4 rotation; default 50MB
-logfile_backups=10           ; # of main logfile backups; 0 means none, default 10
-loglevel=info                ; log level; default info; others: debug,warn,trace
-pidfile=/tmp/supervisord.pid ; supervisord pidfile; default supervisord.pid
-nodaemon=false               ; start in foreground if true; default false
-minfds=1024                  ; min. avail startup file descriptors; default 1024
-minprocs=200                 ; min. avail process descriptors;default 200
-;umask=022                   ; process file creation umask; default 022
-;user=supervisord            ; setuid to this UNIX account at startup; recommended if root
-;identifier=supervisor       ; supervisord identifier, default is 'supervisor'
-;directory=/tmp              ; default is not to cd during start
-;nocleanup=true              ; don't clean up tempfiles at start; default false
-;childlogdir=/tmp            ; 'AUTO' child log dir, default $TEMP
-;environment=KEY="value"     ; key value pairs to add to environment
-;strip_ansi=false            ; strip ansi escape codes in logs; def. false
+logfile=/tmp/supervisord.log ; 日志文件,默认是$CWD/supervisord.log
+logfile_maxbytes=50MB        ; 日志文件大小,超出会rotate,默认 50MB
+logfile_backups=10           ; 日志文件保留备份数量默认10
+loglevel=info                ; 日志级别,默认info,其它:debug,warn,trace
+pidfile=/tmp/supervisord.pid ; pid文件
+nodaemon=false               ; 是否在前台启动,默认是false,即以daemon的方式启动
+minfds=1024                  ; 可以打开的文件描述符的最小值,默认1024
+minprocs=200                 ; 可以打开的进程数的最小值,默认200
+;umask=022                   ; 进程文件创建的默认权限,默认022
+;user=supervisord            ; 默认是当前启动的用户
+;identifier=supervisor       ; 标识符supervisord,默认是'supervisor'
+;directory=/tmp              ; 默认启动时间不会切换
+;nocleanup=true              ; 在启动时不清理临时文件,默认值为false
+;childlogdir=/tmp            ; 'AUTO'子进程日志目录,默认$TEMP
+;environment=KEY="value"     ; 增加一个环境变量键值对,key="value"
+;strip_ansi=false            ; 在log日志里去掉ansi转义编码,默认是false
 
+; 下面的部分选项必须保留在RPC的配置文件中
+; supervisorctl/web接口 使用以下配置来管理
 ; The rpcinterface:supervisor section must remain in the config file for
 ; RPC (supervisorctl/web interface) to work.  Additional interfaces may be
 ; added by defining them in separate [rpcinterface:x] sections.
@@ -95,7 +97,7 @@ supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
 ; or inet_http_server section.
 
 [supervisorctl]
-serverurl=unix:///tmp/supervisor.sock ; use a unix:// URL  for a unix socket
+serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路径与unix_http_server部分的file一致
 ;serverurl=http://127.0.0.1:9001 ; use an http:// url to specify an inet socket
 ;username=chris              ; should be same as in [*_http_server] if set
 ;password=123                ; should be same as in [*_http_server] if set
