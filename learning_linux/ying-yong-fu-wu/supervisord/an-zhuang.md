@@ -57,13 +57,13 @@ echo_supervisord_conf > /etc/supervisord.conf
 file=/tmp/supervisor.sock   ; UNIX socket文件,supervisorctl会使用
 ;chmod=0700                 ; socket文件的mode,默认是 0700
 ;chown=nobody:nogroup       ; socket文件的owner,格式 uid:gid
-;username=user              ; default is no username (open server)
-;password=123               ; default is no password (open server)
+;username=user              ; http_server用户,默认无 (open server)
+;password=123               ; http_server密码,默认无 (open server)
 
-;[inet_http_server]         ; inet (TCP) server disabled by default
-;port=127.0.0.1:9001        ; ip_address:port specifier, *:port for all iface
-;username=user              ; default is no username (open server)
-;password=123               ; default is no password (open server)
+;[inet_http_server]         ; HTTP服务器,提供web管理界面
+;port=127.0.0.1:9001        ; Web管理后台运行的IP和端口,如果开放到公网,需要注意安全性
+;username=user              ; 登录管理后台的用户名 (open server)
+;password=123               ; 登录管理后台的密码 (open server)
 
 [supervisord]
 logfile=/tmp/supervisord.log ; main log file; default $CWD/supervisord.log
