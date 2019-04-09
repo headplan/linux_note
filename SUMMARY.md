@@ -64,6 +64,7 @@
     * [Shadowsocks](learning_linux/ying-yong-fu-wu/shadowsocks.md)
       * [Kcptun](learning_linux/ying-yong-fu-wu/shadowsocks/kcptun.md)
     * [Supervisord](learning_linux/ying-yong-fu-wu/supervisord.md)
+      * [安装](learning_linux/ying-yong-fu-wu/supervisord/an-zhuang.md)
   * [文本和目录管理](learning_linux/wen-ben-he-mu-lu-guan-li.md)
     * [wc命令](learning_linux/wen-ben-he-mu-lu-guan-li/wcming-ling.md)
 * [Linux C](linux_c.md)
