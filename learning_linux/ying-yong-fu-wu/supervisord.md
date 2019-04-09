@@ -12,5 +12,7 @@ Supervisor是一个Client/Server模式的系统 , 允许用户在类unix操作�
 
 通常管理linux进程的时候 , 有些编译运行的程序在安装完成后 , 需要为他们编写启动停止管理脚本 , 实现进程start/stop/restart/reload功能 , 然后丢到/etc/init.d/下面 . 而且进程在异常崩溃结束时 , 许多程序都不会正确重新启动的 . Supervisord启动管理的程序进程是作为其子进程来运行的 , 并且可以配置为在进程崩溃停止时自动重新启动它们 . 
 
+**精准**
 
+在Unix上的进程通常很难获得准确的up/down状态 . Pidfiles经常说谎 , Supervisord将进程作为子进程启动 , 所以它总是知道其子进程的正确的up/down状态 , 可以方便的对这些数据进行查询 . 
 
