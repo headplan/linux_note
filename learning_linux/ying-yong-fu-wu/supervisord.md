@@ -28,25 +28,53 @@ Supervisor是一个Client/Server模式的系统 , 允许用户在类unix操作�
 
 **简单**
 
-Supervisor是通过一个简单的ini风格的配置文件来配置的 , 很容易学习 . 它提供了许多进程选项 , 使您的工作更容易 , 例如重新启动失败的进程和自动日志循环 . 
+Supervisor是通过一个简单的ini风格的配置文件来配置的 , 很容易学习 . 它提供了许多进程选项 , 使您的工作更容易 , 例如重新启动失败的进程和自动日志循环 .
 
 **一站式**
 
-Supervisor提供了一个开始、停止和监视流程的控制台 . 进程可以单独控制 , 也可以分组控制 . 可以通过配置Supervisor提供本地或远程命令行和web界面 . 
+Supervisor提供了一个开始、停止和监视流程的控制台 . 进程可以单独控制 , 也可以分组控制 . 可以通过配置Supervisor提供本地或远程命令行和web界面 .
 
 **高效**
 
-Supervisor通过fork/exec启动它的子进程 , 而不是守护 . 当进程终止时 , 操作系统立即向Supervisor发出信号 , 这与某些解决方案不同 , 这些解决方案依赖于容易出错的的PID文件和定期轮询来重启失败的进程 . 
+Supervisor通过fork/exec启动它的子进程 , 而不是守护 . 当进程终止时 , 操作系统立即向Supervisor发出信号 , 这与某些解决方案不同 , 这些解决方案依赖于容易出错的的PID文件和定期轮询来重启失败的进程 .
 
 **可扩展**
 
-Supervisor有一个简单的事件通知协议 , 用任何语言编写的程序都可以使用它来监视它 , 还有一个XML-RPC接口用于控制 . 它也可以由Python开发人员利用扩展点构建 . 
+Supervisor有一个简单的事件通知协议 , 用任何语言编写的程序都可以使用它来监视它 , 还有一个XML-RPC接口用于控制 . 它也可以由Python开发人员利用扩展点构建 .
 
 **兼容性**
 
-Supervisor除了windows系统 , 其他系统均可以使用 . 它在Linux、Mac OS X、Solaris和FreeBSD上均得到了测试和支持 . 它完全用Python编写 , 所以安装不需要C编译器 . 
+Supervisor除了windows系统 , 其他系统均可以使用 . 它在Linux、Mac OS X、Solaris和FreeBSD上均得到了测试和支持 . 它完全用Python编写 , 所以安装不需要C编译器 .
 
 **可靠**
 
-虽然Supervisor在今天被非常积极的开发 , 但是它并不是一个新的软件 . Supervisor已经存在多年 , 并且已经在许多服务器上使用 . 
+虽然Supervisor在今天被非常积极的开发 , 但是它并不是一个新的软件 . Supervisor已经存在多年 , 并且已经在许多服务器上使用 .
+
+#### Supervisor组件
+
+**Supervisord**
+
+Supervisor服务部分叫做Supervisord . 它负责自己调用时启动子程序 , 响应来自客户机的命令 , 重新启动崩溃或退出的子进程 , 记录子进程挂掉和崩溃的输出 , 并生成和处理与子进程生命周期中的点对应的"事件" . 
+
+它使用了一个配置文件 . 配置文件通常位于/etc/supervision.conf中 . 这个配置文件是一个"Windows-INI"风格的配置文件 . 通过适当的文件系统权限保持该文件的安全性非常重要 , 因为它可能包含未加密的用户名和密码 . 
+
+通俗点讲就是Supervisor的处理器 . 
+
+**Supervisorctl**
+
+Supervisorctl是Supervisor命令行客户端 . 它提供了一个类shell的接口 , 用于管理Supervisor提供的特性 . 用户可以连接到不同的监控器进程\(一次一个\) , 获取受控子进程的状态 , 停止和启动的子进程 , 以及监控器的运行进程列表 . 
+
+通俗点讲就是Supervisor的命令工具 . 
+
+**Web Server**
+
+如果配置中启动了这个模块 , 就可以通过浏览器访问具有与supervisorctl类似功能的web用户界面 . 在配置文件的\[inet\_http\_server\]部分开启 , 访问服务器URL\(例如http://localhost:9001/\) , 通过web接口查看和控制进程状态 . 
+
+通俗点讲就是一个可视化界面 , 可以在界面操作进程 . 
+
+**XML-RPC Interface**
+
+Web UI基于XML-RPC接口服务 , 该接口可用于询问和控制Supervisor及其运行的程序 . 
+
+
 
