@@ -54,27 +54,31 @@ Supervisor除了windows系统 , 其他系统均可以使用 . 它在Linux、Mac 
 
 **Supervisord**
 
-Supervisor服务部分叫做Supervisord . 它负责自己调用时启动子程序 , 响应来自客户机的命令 , 重新启动崩溃或退出的子进程 , 记录子进程挂掉和崩溃的输出 , 并生成和处理与子进程生命周期中的点对应的"事件" . 
+Supervisor服务部分叫做Supervisord . 它负责自己调用时启动子程序 , 响应来自客户机的命令 , 重新启动崩溃或退出的子进程 , 记录子进程挂掉和崩溃的输出 , 并生成和处理与子进程生命周期中的点对应的"事件" .
 
-它使用了一个配置文件 . 配置文件通常位于/etc/supervision.conf中 . 这个配置文件是一个"Windows-INI"风格的配置文件 . 通过适当的文件系统权限保持该文件的安全性非常重要 , 因为它可能包含未加密的用户名和密码 . 
+它使用了一个配置文件 . 配置文件通常位于/etc/supervision.conf中 . 这个配置文件是一个"Windows-INI"风格的配置文件 . 通过适当的文件系统权限保持该文件的安全性非常重要 , 因为它可能包含未加密的用户名和密码 .
 
-通俗点讲就是Supervisor的处理器 . 
+通俗点讲就是Supervisor的处理器 .
 
 **Supervisorctl**
 
-Supervisorctl是Supervisor命令行客户端 . 它提供了一个类shell的接口 , 用于管理Supervisor提供的特性 . 用户可以连接到不同的监控器进程\(一次一个\) , 获取受控子进程的状态 , 停止和启动的子进程 , 以及监控器的运行进程列表 . 
+Supervisorctl是Supervisor命令行客户端 . 它提供了一个类shell的接口 , 用于管理Supervisor提供的特性 . 用户可以连接到不同的监控器进程\(一次一个\) , 获取受控子进程的状态 , 停止和启动的子进程 , 以及监控器的运行进程列表 .
 
-通俗点讲就是Supervisor的命令工具 . 
+通俗点讲就是Supervisor的命令工具 .
 
 **Web Server**
 
-如果配置中启动了这个模块 , 就可以通过浏览器访问具有与supervisorctl类似功能的web用户界面 . 在配置文件的\[inet\_http\_server\]部分开启 , 访问服务器URL\(例如http://localhost:9001/\) , 通过web接口查看和控制进程状态 . 
+如果配置中启动了这个模块 , 就可以通过浏览器访问具有与supervisorctl类似功能的web用户界面 . 在配置文件的\[inet\_http\_server\]部分开启 , 访问服务器URL\(例如[http://localhost:9001/\](http://localhost:9001/\)\) , 通过web接口查看和控制进程状态 .
 
-通俗点讲就是一个可视化界面 , 可以在界面操作进程 . 
+通俗点讲就是一个可视化界面 , 可以在界面操作进程 .
 
 **XML-RPC Interface**
 
-Web UI基于XML-RPC接口服务 , 该接口可用于询问和控制Supervisor及其运行的程序 . 
+Web UI基于XML-RPC接口服务 , 该接口可用于询问和控制Supervisor及其运行的程序 .
 
+#### 平台需求
 
+Supervisor经过测试 , 可以在Linux \(Ubuntu 9.10\)、Mac OS X\(10.4/10.5/10.6\)、Solaris \(10 for Intel\)和FreeBSD 6.1上运行 . 它在大多数UNIX系统上都可以很好地工作 . 但是他不能在windows平台下运行 . 
+
+Supervisor可以使用Python 3 3.4或更高版本以及Python 2 2.7版 . 
 
