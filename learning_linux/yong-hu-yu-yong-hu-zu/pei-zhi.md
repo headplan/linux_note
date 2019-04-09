@@ -87,8 +87,7 @@ groupdel 注：删除用户组；
 groupmod 注：修改用户组信息 
 groups 注：显示用户所属的用户组 
 grpck 
-grpconv 注：通过/etc/group和/etc/gshadow 的文件内容来同步或创建/etc/gshadow ，如果/etc/gshadow 不存在则创建； 
-
+grpconv 注：通过/etc/group和/etc/gshadow 的文件内容来同步或创建/etc/gshadow ，如果/etc/gshadow 不存在则创建；
 ```
 
 
