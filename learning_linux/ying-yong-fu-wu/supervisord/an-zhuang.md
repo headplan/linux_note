@@ -12,5 +12,15 @@ pip install supervisor
 
 根据系统Python的权限 , 可能需要成为root用户才能使用pip成功安装Supervisor . 
 
+**下载安装**
+
+如果系统没有安装pip , 则需要下载Supervisor发行版并手动安装 . 
+
+可以从[PyPi](https://translate.googleusercontent.com/translate_c?depth=1&hl=zh-CN&rurl=translate.google.com&sl=en&sp=nmt4&tl=zh-CN&u=https://pypi.org/pypi/supervisor/&xid=25657,15700021,15700186,15700191,15700253,15700256,15700259&usg=ALkJrhg3uCOvHaVQSRPemOIq2UjHWN43iA)下载当前和以前的Supervisor版本 . 解压缩软件存档后 , 运行 : 
+
+```
+python setup.py install
+```
+
 
 
