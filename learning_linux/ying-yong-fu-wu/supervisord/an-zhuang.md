@@ -26,3 +26,15 @@ python setup.py install
 
 根据系统Python的权限 , 可能需要成为root用户才能成功调用安装命令 .
 
+#### 创建配置文件
+
+Supervisor相当强大 , 提供了很丰富的功能 , 不过我们可能只需要用到其中一小部分 . 安装完成之后 , 可以编写配置文件 , 来满足自己的需求 . 为了方便 , 把配置分成两部分 : supervisord\(supervisor是一个C/S模型的程序 , 这是server端 , 对应的有client端supervisorctl\)和应用程序\(即我们要管理的程序\) . 
+
+首先来看 supervisord 的配置文件 . 安装完 supervisor 之后 , 可以运行`echo_supervisord_conf`命令输出默认的配置项 , 也可以重定向到一个配置文件里 : 
+
+```
+echo_supervisord_conf > /etc/supervisord.conf
+```
+
+
+
