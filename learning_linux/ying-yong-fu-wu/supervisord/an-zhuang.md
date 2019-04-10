@@ -203,7 +203,7 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 mkdir -pv /etc/supervisor/config.d
 ```
 
-修改supervisord主程序文件 : 
+修改supervisord主程序文件 :
 
 ```
 sed -i '$ a [include]' /etc/supervisord.conf
