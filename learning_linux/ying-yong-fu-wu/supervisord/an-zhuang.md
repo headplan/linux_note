@@ -141,6 +141,7 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ;environment=A="1",B="2"       ; 添加进程环境变量 (def no adds)
 ;serverurl=AUTO                ; 覆盖serverurl计算 (childutils)
 
+; 下面是event事件部分所有可能设置的值,大部分同上面一样。
 ; The sample eventlistener section below shows all possible eventlistener
 ; subsection values.  Create one or more 'real' eventlistener: sections to be
 ; able to handle event notifications sent by supervisord.
@@ -182,7 +183,7 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ; or more 'real' group: sections to create "heterogeneous" process groups.
 
 ;[group:thegroupname]
-;programs=progname1,progname2  ; each refers to 'x' in [program:x] definitions
+;programs=progname1,progname2  ; 这里的progname1,progname2就是定义的监控管理程序的名字,如[program:x]这里就是x
 ;priority=999                  ; the relative start priority (default 999)
 
 ; The [include] section can just contain the "files" setting.  This
