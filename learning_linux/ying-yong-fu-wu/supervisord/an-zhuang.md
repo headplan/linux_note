@@ -197,5 +197,11 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ;files = relative/directory/*.ini
 ```
 
+创建supervisor存放监控程序的目录 , 并修改supervisod.conf文件 : 
+
+```
+mkdir -pv /etc/supervisor/config.d
+```
+
 
 
