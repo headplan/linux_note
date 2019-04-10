@@ -133,13 +133,13 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ;stdout_events_enabled=false   ; 在标准输出写入文件时发出事件 (default false)
 ;stdout_syslog=false           ; send stdout to syslog with process name (default false)
 ;stderr_logfile=/a/path        ; 标准错误输出,NONE for none;default AUTO
-;stderr_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
+;stderr_logfile_maxbytes=1MB   ; 文件最大大小 # logfile bytes b4 rotation (default 50MB)
 ;stderr_logfile_backups=10     ; # of stderr logfile backups (0 means none, default 10)
 ;stderr_capture_maxbytes=1MB   ; number of bytes in 'capturemode' (default 0)
 ;stderr_events_enabled=false   ; emit events on stderr writes (default false)
 ;stderr_syslog=false           ; send stderr to syslog with process name (default false)
-;environment=A="1",B="2"       ; process environment additions (def no adds)
-;serverurl=AUTO                ; override serverurl computation (childutils)
+;environment=A="1",B="2"       ; 添加进程环境变量 (def no adds)
+;serverurl=AUTO                ; 覆盖serverurl计算 (childutils)
 
 ; The sample eventlistener section below shows all possible eventlistener
 ; subsection values.  Create one or more 'real' eventlistener: sections to be
