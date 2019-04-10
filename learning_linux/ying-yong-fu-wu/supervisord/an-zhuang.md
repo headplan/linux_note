@@ -186,13 +186,14 @@ serverurl=unix:///tmp/supervisor.sock ; 通过UNIX socket连接supervisord,路�
 ;programs=progname1,progname2  ; 这里的progname1,progname2就是定义的监控管理程序的名字,如[program:x]这里就是x
 ;priority=999                  ; the relative start priority (default 999)
 
+; 下面的 [include] 选项只能包含一个files 设置,功能是定义supervisor管理程序的配置文件,可以单独的移除去,和主配置文件分开,方便.
 ; The [include] section can just contain the "files" setting.  This
 ; setting can list multiple files (separated by whitespace or
 ; newlines).  It can also contain wildcards.  The filenames are
 ; interpreted as relative to this file.  Included files *cannot*
 ; include files themselves.
 
-;[include]
+;[include] 定义管理监控程序的配置文件的路径
 ;files = relative/directory/*.ini
 ```
 
