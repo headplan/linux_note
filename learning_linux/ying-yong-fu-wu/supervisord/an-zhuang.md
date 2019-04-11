@@ -274,7 +274,7 @@ redirect_stderr = true          ; 把 stderr 重定向到 stdout，默认 false
 stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
 stdout_logfile_backups = 20     ; stdout 日志文件备份数
 stdout_capture_maxbytes = 1MB
-stdout_logfile=/var/log/supervisor-nginx.log
+stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 
 [program:mysql]
 
