@@ -261,13 +261,13 @@ stdout_logfile = /data/logs/usercenter_stdout.log
 
 ```
 [program:nginx]
-command = /usr/local/nginx/sbin/nginx -g 'daemon off;' -c /usr/local/nginx/conf/nginx.conf
+command = /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
 autostart = true                ; 是否跟随supervisord程序启动该监控程序
 startsecs = 10                  ; 启动10秒后没有异常退出,就当作已经正常启动了
 autorestart = true              ; 程序异常退出后自动重启
 stopasgroup = true              ; 有时候用Supervisor托管的程序还会有子进程,如果只杀死主进程,子进程就可能变成孤儿进程.
 killasgroup = true              ; 通过这两项配置来确保所有子进程都能正确停止.
-user = www                      ; 用哪个用户启动
+user = root                      ; 用哪个用户启动
 startretries = 5                ; 启动失败自动重试次数,默认是3
 exitcodes = 0,2,70              ; 'expected' 符合退出代码之后去重启
 stopsignal = QUIT               ; 用于杀死进程的信号
@@ -278,6 +278,11 @@ stdout_logfile_backups = 20     ; stdout 日志文件备份数
 stdout_capture_maxbytes = 1MB
 stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 
+注:
+1.配置nginx添加配置,关闭守护进程daemon off;
+```
+
+```
 [program:mysql]
 
 [program:php-fpm]
@@ -294,5 +299,28 @@ systemctl list-unit-files # 查看原生systemd服务
 systemctl disable nginx.server # 关闭开机启动
 ```
 
+使用supervisorctl
 
+Supervisorctl 是 supervisord 的一个命令行客户端工具 , 启动时需要指定与 supervisord 使用同一份配置文件 , 否则与supervisord一样按照顺序查找配置文件 . 
+
+```
+supervisorctl -c /etc/supervisord.conf
+```
+
+进入supervisorctl的shell界面 . 
+
+```
+> status        # 查看程序状态
+> stop nginx    # 关闭 nginx 程序
+> start nginx   # 启动 nginx 程序
+> restart nginx # 重启 nginx 程序
+> reread        # 读取有更新(增加)的配置文件,不会启动新添加的程序
+> update        # 重启配置文件修改过的程序
+```
+
+supervisorctl update
+
+supervisorctl reload
+
+supervisorctl status
 
