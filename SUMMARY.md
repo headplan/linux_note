@@ -67,6 +67,7 @@
       * [安装](learning_linux/ying-yong-fu-wu/supervisord/an-zhuang.md)
   * [文本和目录管理](learning_linux/wen-ben-he-mu-lu-guan-li.md)
     * [wc命令](learning_linux/wen-ben-he-mu-lu-guan-li/wcming-ling.md)
+  * [开机启动](learning_linux/kai-ji-qi-dong.md)
 * [Linux C](linux_c.md)
   * [语言基础](linux_c/yu-yan-ji-chu.md)
     * [程序的基本概念](linux_c/yu-yan-ji-chu/cheng-xu-de-ji-ben-gai-nian.md)

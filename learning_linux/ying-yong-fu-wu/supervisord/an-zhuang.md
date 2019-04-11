@@ -218,10 +218,25 @@ sed -i '$ a files = /etc/supervisor/config.d/*.ini' /etc/supervisord.conf
 https://github.com/Supervisor/initscripts
 ```
 
-CentOS 7 以后 , 使用Systemd来管理自启动服务 , 下载对应的脚本 : 
+CentOS 7 以后 , 使用Systemd来管理自启动服务 , 下载对应的脚本 :
 
 ```
 wget -O /usr/lib/systemd/system/supervisord.service https://raw.githubusercontent.com/Supervisor/initscripts/master/centos-systemd-etcs
+```
+
+#### 启动Supervisor服务
+
+重新加载Systemd配置 , 使得Supervisord配置生效 : 
+
+```
+systemctl daemon-reload
+```
+
+然后设置自启动 , 并启动Supervisor服务 : 
+
+```
+systemctl enable supervisord.service
+systemctl start supervisord.service
 ```
 
 
