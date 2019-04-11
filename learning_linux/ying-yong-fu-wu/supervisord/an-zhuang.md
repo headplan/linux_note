@@ -239,7 +239,7 @@ systemctl enable supervisord.service
 systemctl start supervisord.service
 ```
 
-配置守护进程 , 这里要背supervisor守护的进程需要关闭默认的daemon守护 . 
+配置守护进程 , 这里要背supervisor守护的进程需要关闭默认的daemon守护 .
 
 ```
 [program:usercenter]
@@ -255,20 +255,19 @@ stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
 stdout_logfile_backups = 20     ; stdout 日志文件备份数
 ; stdout 日志文件,需要注意当指定目录不存在时无法正常启动,所以需要手动创建目录(supervisord会自动创建日志文件)
 stdout_logfile = /data/logs/usercenter_stdout.log
+```
 
-[program:golang-http-server]
-command=/root/simple_http_server
-autostart=true
-startsecs=10
-autorestart=true
-stdout_logfile=/var/log/simple_http_server.log
-stdout_logfile_maxbytes=1MB
-stdout_logfile_backups=10
-stdout_capture_maxbytes=1MB
-stderr_logfile=/var/log/simple_http_server.log
-stderr_logfile_maxbytes=1MB
-stderr_logfile_backups=10
-stderr_capture_maxbytes=1MB
+常用的就这些 , 可以根据前面配置文件中的添加 . 
+
+```
+[program:nginx]
+command = /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+
+[program:mysql]
+
+[program:php-fpm]
+
+[program:laravel]
 ```
 
 
