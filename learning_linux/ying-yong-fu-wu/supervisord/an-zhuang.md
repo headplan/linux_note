@@ -210,12 +210,18 @@ sed -i '$ a [include]' /etc/supervisord.conf
 sed -i '$ a files = /etc/supervisor/config.d/*.ini' /etc/supervisord.conf
 ```
 
-在init.d中创建开始停止脚本 : 
+在init.d中创建开始停止脚本 :
 
 官网提供的init脚本
 
 ```
 https://github.com/Supervisor/initscripts
+```
+
+CentOS 7 以后 , 使用Systemd来管理自启动服务 , 下载对应的脚本 : 
+
+```
+wget -O /usr/lib/systemd/system/supervisord.service https://raw.githubusercontent.com/Supervisor/initscripts/master/centos-systemd-etcs
 ```
 
 
