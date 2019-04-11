@@ -283,5 +283,12 @@ stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 [program:laravel]
 ```
 
+关闭开机器动
+
+```
+chkconfig --list # 查看SysV服务的列表
+systemctl list-unit-files # 查看原生systemd服务
+```
+
 
 
