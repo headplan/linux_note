@@ -287,7 +287,9 @@ stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 
 ```
 chkconfig --list # 查看SysV服务的列表
+chkconfig nginx off # 关闭开机启动
 systemctl list-unit-files # 查看原生systemd服务
+systemctl disable nginx.server # 关闭开机启动
 ```
 
 
