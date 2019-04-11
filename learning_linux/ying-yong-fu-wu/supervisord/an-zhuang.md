@@ -226,17 +226,49 @@ wget -O /usr/lib/systemd/system/supervisord.service https://raw.githubuserconten
 
 #### 启动Supervisor服务
 
-重新加载Systemd配置 , 使得Supervisord配置生效 : 
+重新加载Systemd配置 , 使得Supervisord配置生效 :
 
 ```
 systemctl daemon-reload
 ```
 
-然后设置自启动 , 并启动Supervisor服务 : 
+然后设置自启动 , 并启动Supervisor服务 :
 
 ```
 systemctl enable supervisord.service
 systemctl start supervisord.service
+```
+
+配置守护进程 , 这里要背supervisor守护的进程需要关闭默认的daemon守护 . 
+
+```
+[program:usercenter]
+directory = /home/leon/projects/usercenter ; 程序的启动目录
+command = gunicorn -w 8 -b 0.0.0.0:17510 wsgi:app  ; 表示运行的命令,也就是启动命令,填入完整的路径即可
+autostart = true     ; 在 supervisord 启动的时候也自动启动
+startsecs = 10       ; 启动 10 秒后没有异常退出,就当作已经正常启动了
+autorestart = true   ; 程序异常退出后自动重启
+startretries = 3     ; 启动失败自动重试次数,默认是3
+user = leon          ; 用哪个用户启动
+redirect_stderr = true          ; 把 stderr 重定向到 stdout，默认 false
+stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
+stdout_logfile_backups = 20     ; stdout 日志文件备份数
+; stdout 日志文件,需要注意当指定目录不存在时无法正常启动,所以需要手动创建目录(supervisord会自动创建日志文件)
+stdout_logfile = /data/logs/usercenter_stdout.log
+
+[program:golang-http-server]
+command=/root/simple_http_server
+autostart=true
+startsecs=10
+autorestart=true
+stdout_logfile=/var/log/simple_http_server.log
+stdout_logfile_maxbytes=1MB
+stdout_logfile_backups=10
+stdout_capture_maxbytes=1MB
+stderr_logfile=/var/log/simple_http_server.log
+stderr_logfile_maxbytes=1MB
+stderr_logfile_backups=10
+stderr_capture_maxbytes=1MB
 ```
 
 
