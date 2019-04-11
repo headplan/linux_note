@@ -301,13 +301,13 @@ systemctl disable nginx.server # 关闭开机启动
 
 使用supervisorctl
 
-Supervisorctl 是 supervisord 的一个命令行客户端工具 , 启动时需要指定与 supervisord 使用同一份配置文件 , 否则与supervisord一样按照顺序查找配置文件 . 
+Supervisorctl 是 supervisord 的一个命令行客户端工具 , 启动时需要指定与 supervisord 使用同一份配置文件 , 否则与supervisord一样按照顺序查找配置文件 .
 
 ```
 supervisorctl -c /etc/supervisord.conf
 ```
 
-进入supervisorctl的shell界面 . 
+进入supervisorctl的shell界面 .
 
 ```
 > status        # 查看程序状态
@@ -318,9 +318,16 @@ supervisorctl -c /etc/supervisord.conf
 > update        # 重启配置文件修改过的程序
 ```
 
-supervisorctl update
+直接在 bash 终端也可以运行 : 
 
-supervisorctl reload
+```
+$ supervisorctl status
+$ supervisorctl stop usercenter
+$ supervisorctl start usercenter
+$ supervisorctl restart usercenter
+$ supervisorctl reread
+$ supervisorctl update
+```
 
-supervisorctl status
+
 
