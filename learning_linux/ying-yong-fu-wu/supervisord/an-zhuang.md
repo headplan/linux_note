@@ -210,5 +210,13 @@ sed -i '$ a [include]' /etc/supervisord.conf
 sed -i '$ a files = /etc/supervisor/config.d/*.ini' /etc/supervisord.conf
 ```
 
+在init.d中创建开始停止脚本 : 
+
+官网提供的init脚本
+
+```
+https://github.com/Supervisor/initscripts
+```
+
 
 
