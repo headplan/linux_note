@@ -286,6 +286,23 @@ stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 [program:mysql]
 
 [program:php-fpm]
+command = /usr/local/php/sbin/php-fpm --nodaemonize --fpm-config /usr/local/php/etc/php-fpm.conf --pid /usr/local/php/var/run/php-fpm.pid
+autostart = true                ; 是否跟随supervisord程序启动该监控程序
+startsecs = 10                  ; 启动10秒后没有异常退出,就当作已经正常启动了
+autorestart = true              ; 程序异常退出后自动重启
+stopasgroup = true              ; 有时候用Supervisor托管的程序还会有子进程,如果只杀死主进程,子进程就可能变成孤儿进程.
+killasgroup = true              ; 通过这两项配置来确保所有子进程都能正确停止.
+user = root                     ; 用哪个用户启动
+startretries = 5                ; 启动失败自动重试次数,默认是3
+exitcodes = 0,2,70              ; 'expected' 符合退出代码之后去重启
+stopsignal = QUIT               ; 用于杀死进程的信号
+stopwaitsecs = 2                ; 最大等待秒数SIGKILL
+redirect_stderr = true          ; 把 stderr 重定向到 stdout，默认 false
+stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
+stdout_logfile_backups = 20     ; stdout 日志文件备份数
+stdout_capture_maxbytes = 1MB
+stdout_logfile = /root/logfile/supervisord.conf/php-fpm.log
+
 
 [program:laravel]
 ```
