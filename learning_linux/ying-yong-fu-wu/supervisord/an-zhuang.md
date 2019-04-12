@@ -304,7 +304,7 @@ stdout_logfile = /root/logfile/supervisord.conf/php-fpm.log
 
 ```
 [program:mysql]
-command = /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/data/mysql --pid-file=/data/mysql/mysql.pid
+command = /usr/bin/pidproxy /data/mysql/mysql.pid /usr/local/mysql/bin/mysqld_safe
 autostart = true                ; 是否跟随supervisord程序启动该监控程序
 startsecs = 10                  ; 启动10秒后没有异常退出,就当作已经正常启动了
 autorestart = true              ; 程序异常退出后自动重启
@@ -372,9 +372,9 @@ $ supervisorctl update
 
 配置说明
 
-port为监听端口 , username和password分别为帐号和密码 . 
+port为监听端口 , username和password分别为帐号和密码 .
 
-保存文件后需要重启supervisor . 然后访问 "http://ip:5000" , 输入上面设置的用户名和密码即可打开supervisor的web控制台了 . 
+保存文件后需要重启supervisor . 然后访问 "[http://ip:5000](http://ip:5000)" , 输入上面设置的用户名和密码即可打开supervisor的web控制台了 . 
 
 
 
