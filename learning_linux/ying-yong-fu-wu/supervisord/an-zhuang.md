@@ -283,8 +283,6 @@ stdout_logfile = /root/logfile/supervisord.conf/nginx.log
 ```
 
 ```
-[program:mysql]
-
 [program:php-fpm]
 command = /usr/local/php/sbin/php-fpm --nodaemonize --fpm-config /usr/local/php/etc/php-fpm.conf --pid /usr/local/php/var/run/php-fpm.pid
 autostart = true                ; 是否跟随supervisord程序启动该监控程序
@@ -302,8 +300,10 @@ stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
 stdout_logfile_backups = 20     ; stdout 日志文件备份数
 stdout_capture_maxbytes = 1MB
 stdout_logfile = /root/logfile/supervisord.conf/php-fpm.log
+```
 
-
+```
+[program:mysql]
 [program:laravel]
 ```
 
