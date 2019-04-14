@@ -346,7 +346,7 @@ stdout_logfile = /root/logfile/supervisord.conf/redis.log
 
 ```
 [program:memcache]
-command = 
+command = /usr/local/memcached/bin/memcached -p 11211 -u memcached -m 473 -c 1024 -l 127.0.0.1
 autostart = true                ; 是否跟随supervisord程序启动该监控程序
 startsecs = 10                  ; 启动10秒后没有异常退出,就当作已经正常启动了
 autorestart = true              ; 程序异常退出后自动重启
