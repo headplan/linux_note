@@ -9,6 +9,7 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 * 添加域名
 * 选择free
 * 添加A记录\(域名和IP地址\)
+* 设置域名解析服务器
 
 
 
