@@ -13,5 +13,14 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 * 开启SSL/TLS\(默认开启\)
 * DNS暂时关闭\(Proxy status状态设置灰色\)
 
+#### 搭建服务
+
+```bash
+#官方的一键安装脚本
+bash <(curl -L -s https://install.direct/go.sh)
+#第三方的傻瓜式一键安装配置脚本：
+bash <(curl -s -L https://233yes.com/v2ray.sh)
+```
+
 
 
