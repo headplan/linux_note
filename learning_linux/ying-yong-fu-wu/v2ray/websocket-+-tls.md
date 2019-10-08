@@ -42,7 +42,23 @@ location /ws {
 }
 ```
 
-重启服务 . 
+重启服务 .
+
+#### 安装配置v2ray
+
+使用233的一键脚本 , 选择4 : WebSocket+TLS传输协议
+
+V2Ray 端口 = 56597
+
+输入之前配置解析好的域名 , 记得在Cloudflare的DNS设置成DNS only
+
+然后选择已经配置了TLS
+
+是否开启广告拦截\(会影响性能\) , N
+
+是否配置 Shadowsocks , N
+
+然后回车 , 开始安装 . 
 
 
 
