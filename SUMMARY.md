@@ -66,6 +66,7 @@
     * [Supervisord](learning_linux/ying-yong-fu-wu/supervisord.md)
       * [安装](learning_linux/ying-yong-fu-wu/supervisord/an-zhuang.md)
     * [v2ray](learning_linux/ying-yong-fu-wu/v2ray.md)
+      * [IP检测](learning_linux/ying-yong-fu-wu/v2ray/ipjian-ce.md)
   * [文本和目录管理](learning_linux/wen-ben-he-mu-lu-guan-li.md)
     * [wc命令](learning_linux/wen-ben-he-mu-lu-guan-li/wcming-ling.md)
   * [开机启动](learning_linux/kai-ji-qi-dong.md)
