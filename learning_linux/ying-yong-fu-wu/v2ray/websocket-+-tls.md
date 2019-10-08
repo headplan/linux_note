@@ -29,6 +29,8 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 
 这里直接用Oneinstack安装Nginx , 直接创建新的站点 , HTTPS也一件部署好了 . 然后手动配置一个ws的location
 
+> 这里整数可以用前面的 , 也可以直接用Oneinstack的脚本生成 .
+
 ```bash
 location /ws {
     proxy_redirect off;
@@ -39,6 +41,8 @@ location /ws {
     proxy_set_header Host $http_host;
 }
 ```
+
+重启服务 . 
 
 
 
