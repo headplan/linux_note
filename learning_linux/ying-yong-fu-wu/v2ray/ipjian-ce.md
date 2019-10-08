@@ -16,5 +16,5 @@
 
 [https://ipcheck.sebbie.me/](https://ipcheck.sebbie.me/)
 
-安装tcptraceroute软件包 : tcpping IP 端口
+安装tcptraceroute软件包 : sudo tcptraceroute IP 端口
 
