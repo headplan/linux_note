@@ -18,3 +18,5 @@
 
 安装tcptraceroute软件包 : sudo tcptraceroute IP 端口
 
+或者mtr等工具\(详见网络诊断中的记录\) . 
+
