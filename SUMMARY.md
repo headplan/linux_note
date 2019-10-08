@@ -70,6 +70,7 @@
   * [文本和目录管理](learning_linux/wen-ben-he-mu-lu-guan-li.md)
     * [wc命令](learning_linux/wen-ben-he-mu-lu-guan-li/wcming-ling.md)
   * [网络诊断](learning_linux/wang-luo-zhen-duan.md)
+    * [MTR](learning_linux/wang-luo-zhen-duan/mtr.md)
   * [开机启动](learning_linux/kai-ji-qi-dong.md)
 * [Linux C](linux_c.md)
   * [语言基础](linux_c/yu-yan-ji-chu.md)
