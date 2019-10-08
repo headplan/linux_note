@@ -4,7 +4,7 @@
 
 Godaddy域名 : [https://sg.godaddy.com/zh](https://sg.godaddy.com/zh)
 
-其他域名 : [https://www.namesilo.com](https://www.namesilo.com/)/
+其他域名 : [https://www.namesilo.com](https://www.namesilo.com/)
 
 Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/link?url=-kXyAJYvgMWiGooBatfD0Q1kNCzSRgwxuDpK2OX1fRwjq5G0SwtelYOhgsuaRoV2)
 
