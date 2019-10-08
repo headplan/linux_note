@@ -4,6 +4,8 @@
 
 Godaddy域名 : [https://sg.godaddy.com/zh](https://sg.godaddy.com/zh)
 
+其他域名 : [https://www.namesilo.com](https://www.namesilo.com/)/
+
 Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/link?url=-kXyAJYvgMWiGooBatfD0Q1kNCzSRgwxuDpK2OX1fRwjq5G0SwtelYOhgsuaRoV2)
 
 * 添加域名
@@ -27,6 +29,4 @@ bash <(curl -s -L https://233yes.com/v2ray.sh)
 [https://github.com/yanue/v2rayu](https://github.com/yanue/v2rayu)
 
 [https://github.com/Cenmrev/V2RayX](https://github.com/Cenmrev/V2RayX)
-
-
 
