@@ -51,6 +51,22 @@ bash <(curl -s -L https://233yes.com/v2ray.sh)
 备注2: [utp | srtp | wechat-video | dtls | wireguard] 分别伪装成 [BT下载 | 视频通话 | 微信视频通话 | DTLS 1.2 数据包 | WireGuard 数据包]
 ```
 
+#### 命令行
+
+```
+1. 查看 V2Ray 配置
+2. 修改 V2Ray 配置
+3. 下载 V2Ray 配置 / 生成配置信息链接 / 生成二维码链接
+4. 查看 Shadowsocks 配置 / 生成二维码链接
+5. 修改 Shadowsocks 配置
+6. 查看 MTProto 配置 / 修改 MTProto 配置
+7. 查看 Socks5 配置 / 修改 Socks5 配置
+8. 启动 / 停止 / 重启 / 查看日志
+9. 更新 V2Ray / 更新 V2Ray 管理脚本
+10. 卸载 V2Ray
+11. 其他
+```
+
 #### v2ray客户端
 
 [https://github.com/yanue/v2rayu](https://github.com/yanue/v2rayu)
