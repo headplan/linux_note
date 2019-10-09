@@ -16,6 +16,7 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 * 设置域名解析服务器
 * 开启SSL/TLS\(默认开启 , 选择Full\)
 * DNS暂时关闭\(Proxy status状态设置灰色\)
+  * 最后配置完再打开
 
 #### **下载证书**
 
@@ -23,7 +24,7 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 
 在Origin Server菜单中点击Origin Certificates中的创建证书按钮Create Certificate .
 
-默认配置即可 , 保存证书以及私钥 , 私钥保存好\(只出现一次\) .
+默认配置即可 , 保存证书以及私钥 , 私钥保存好\(只出现一次\) . 
 
 #### 搭建Nginx服务
 
@@ -32,7 +33,7 @@ Cloudflare免费CDN : [https://www.**cloudflare**.com/](http://www.baidu.com/lin
 > 这里整数可以用前面的 , 也可以直接用Oneinstack的脚本生成 .
 
 ```bash
-location /ws {
+location / {
     proxy_redirect off;
     proxy_pass http://127.0.0.1:12345;
     proxy_http_version 1.1;
@@ -64,5 +65,5 @@ V2Ray 端口 = 56597
 
 > VPS 内核支持开启 BBR 会自动启用 BBR 优化
 
-安装完成可以使用v2ray命令查看修改相关配置了 . 
+安装完成可以使用v2ray命令查看修改相关配置了 .
 
