@@ -118,15 +118,23 @@ SSH是由客户端和服务端的软件组成.有两个不兼容的版本1.x和2
 /etc/ssh/sshd\_config
 
 ```
-# 设置SSH服务监听的端口,默认为22
+############# 关于SSH Server的整体设置 ##############
+
+# 设置SSH服务监听的端口,默认为22.建议设置为陌生的5位数端口
 Port 22
 # any表示监听IPv4和IPv6.如果设置为inet表示只监听IPv4,inet6表示仅监听IPv6
 AddressFamily any
 # 设置允许连接到SSH服务的主机.默认0.0.0.0监听所有主机
 ListenAddress 0.0.0.0
-# 设置使用SSH协议,如果使用两个协议之间用逗号分隔,默认协议SSH2
+# 设置使用SSH协议,如果使用两个协议之间用逗号分隔(2,1),默认协议SSH2,SSH1存在漏洞与缺陷
 Protocol 2
-# 设置私钥加密文件,使用rsa,ecdsa,ed25519加密算法生成的文件
+
+############# Private Key相关的配置 ##############
+
+# 设置私钥加密文件,使用rsa,ecdsa,ed25519加密算法生成的文件;
+# HostKey是主机私钥文件的存放位置;
+# SSH-1默认是/etc/ssh/ssh_host_key.SSH-2默认是/etc/ssh/ssh_host_rsa_key和/etc/ssh/ssh_host_dsa_key.
+# 一台主机可以拥有多个不同的私钥."rsa1"仅用于SSH-1,"dsa"和"rsa"仅用于SSH-2.
 HostKey /etc/ssh/ssh_host_rsa_key
 HostKey /etc/ssh/ssh_host_ecdsa_key
 HostKey /etc/ssh/ssh_host_ed25519_key
@@ -135,10 +143,14 @@ KeyRegenerationInterval 1h
 # 定义服务器密钥长度
 ServerKeyBits 1024
 #
-http://19001989.blog.51cto.com/3447586/645882
+
+https://blog.csdn.net/xieyi2015/article/details/70990922
+https://blog.csdn.net/field_yang/article/details/51568861
+http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+http://blog.licess.com/sshd_config/
+https://blog.csdn.net/zhu_xun/article/details/18304441
+https://www.cnblogs.com/sysk/p/4825275.html
 ```
-
-
 
 
 
