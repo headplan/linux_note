@@ -16,11 +16,26 @@ SSH服务默认是开启的,并且开机自动启动
 
 ```
 service sshd status # 服务状态
+netstat -antulp | grep ssh 查看ssh状态
+# 查看是否开机启动
 ls /etc/systemd/system/multi-user.target.wants/ # systmed服务查看开机自启动
-chkconfig –list # SysV服务查看开机自动启
+chkconfig --list # SysV服务查看开机自动启
 ```
 
 > SSH和SElinux没有直接的冲突,防火墙默认唯一开启的服务
+
+**设置开机启动**
+
+```
+vi /etc/rc.local
+加入:
+service sshd start 或
+/etc/init.d/sshd start
+```
+
+或者
+
+进入/etc/rc.d , 进入相应运行级别如rc3.d . 将K开头的ssh服务改为S开头的 . 
 
 ### SSH基本信息
 
