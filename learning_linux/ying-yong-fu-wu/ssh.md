@@ -31,11 +31,21 @@ vi /etc/rc.local
 加入:
 service sshd start 或
 /etc/init.d/sshd start
+
+systemctl enable sshd
+
+sysv-rc-conf
+sysv-rc-conf --list | grep ssh
+sysv-rc-conf ssh on  //系统自动启动SSH服务
+sysv-rc-conf ssh off  // 关闭系统自动启动SSH服务
+
+update-rc.d ssh enable  //系统自动启动SSH服务
+update-rc.d ssh disabled // 关闭系统自动启动SSH服务
 ```
 
 或者
 
-进入/etc/rc.d , 进入相应运行级别如rc3.d . 将K开头的ssh服务改为S开头的 . 
+进入/etc/rc.d , 进入相应运行级别如rc3.d . 将K开头的ssh服务改为S开头的 .
 
 ### SSH基本信息
 

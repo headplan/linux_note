@@ -59,6 +59,7 @@
     * [FastDFS](learning_linux/ying-yong-fu-wu/fastdfs.md)
     * [SSH](learning_linux/ying-yong-fu-wu/ssh.md)
       * [应用记录](learning_linux/ying-yong-fu-wu/ssh/ying-yong-ji-lu.md)
+      * [Kali开启SSH服务](learning_linux/ying-yong-fu-wu/ssh/kalikai-qi-ssh-fu-wu.md)
     * [SVN](learning_linux/ying-yong-fu-wu/svn.md)
       * [SYNC](learning_linux/ying-yong-fu-wu/svn/sync.md)
     * [Google Authenticator](learning_linux/ying-yong-fu-wu/google-authenticator.md)
