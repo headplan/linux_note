@@ -70,6 +70,7 @@
     * [v2ray](learning_linux/ying-yong-fu-wu/v2ray.md)
       * [IP检测](learning_linux/ying-yong-fu-wu/v2ray/ipjian-ce.md)
       * [WebSocket + TLS](learning_linux/ying-yong-fu-wu/v2ray/websocket-+-tls.md)
+    * [Ansible](learning_linux/ying-yong-fu-wu/ansible.md)
   * [文本和目录管理](learning_linux/wen-ben-he-mu-lu-guan-li.md)
     * [wc命令](learning_linux/wen-ben-he-mu-lu-guan-li/wcming-ling.md)
   * [网络诊断](learning_linux/wang-luo-zhen-duan.md)
