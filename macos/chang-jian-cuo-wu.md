@@ -16,5 +16,7 @@ $ cd /usr/local/opt/readline/lib/
 $ ln -s libreadline.dylib libreadline.7.dylib
 ```
 
+> 原因 homebrew 将 libhistory 更新至8.0 . 而很多软件仍没有更新 . 或者是libreadline.7.dylib找不到 .
+
 
 
