@@ -141,5 +141,12 @@ session required /lib/security/pam_limits.so
 >
 > > 在[ ](http://www.linuxde.net/)Linux Kernel 2.6.25之前通过ulimit -n\(setrlimit\(RLIMIT\_NOFILE\)\)设置每个进程的最大打开文件句柄数不能超过NR\_OPEN \(1024\*1024\) , 也就是100多万\(除非重新编译内核\) , 而在Linux Kernel 2.6.25之后 , 内核导出了一个sys接口可以修改这个最大值\(`/proc/sys/fs/nr_open`\) . 具体的changelog[ ](http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=9cfe015aa424b3c003baba3841a60dd9b5ad319b): [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9cfe015aa424b3c003baba3841a60dd9b5ad319b](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9cfe015aa424b3c003baba3841a60dd9b5ad319b)
 
+通过读取**`/proc/sys/fs/file-nr`**可以看到当前使用的文件描述符总数 . 另外 , 对于文件描述符的配置 , 需要注意以下几点 : 
+
+* 所有进程打开的文件描述符数不能超过**`/proc/sys/fs/file-max`**
+* 单个进程打开的文件描述符数不能超过user limit中nofile的soft limit
+* nofile的soft limit不能超过其hard limit
+* nofile的hard limit不能超过**`/proc/sys/fs/nr_open  `**
+
 
 
