@@ -148,5 +148,60 @@ session required /lib/security/pam_limits.so
 * nofile的soft limit不能超过其hard limit
 * nofile的hard limit不能超过/proc/sys/fs/nr\_open
 
+---
+
+### 问题案例
+
+#### **问题1**
+
+**su切换用户时提示 Resource temporarily unavailable 或者通过进程跟踪 strace -p pid 看到 Resource temporarily unavailab**
+
+通过`ulimit -a`得到结果
+
+```
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 63463
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 65535
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+```
+
+**查看参数**
+
+* **open files** : 一个进程可打开的最大文件数 .
+* **max user processes** : 系统允许创建的最大进程数量 .
+
+```
+# ps -efL | grep java | wc -l
+24001
+```
+
+这个得到的线程数竟然是2万多 , 远远超过4096 . 可以使用 ulimit -u 20000 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 . 根据前面内容 , 修改**/etc/security/limits.d/20-nproc.conf**的配置文件 : 
+
+```
+[root@JD sys]# cat /etc/security/limits.d/20-nproc.conf_bk
+# Default limit for number of user's processes to prevent
+# accidental fork bombs.
+# See rhbz #432903 for reasoning.
+
+*          soft    nproc     4096
+root       soft    nproc     unlimited
+```
+
+#### 问题2
+
+linux 打开文件数 too many open files 解决方法 . 
+
 
 
