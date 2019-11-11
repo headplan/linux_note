@@ -96,26 +96,26 @@ Linux有硬性限制和软性限制 . 可以通过ulimit来设定这两个参数
 
 ```
 COMMAND     PID    USER   FD      TYPE     DEVICE      SIZE       NODE NAME 
- init          1    root  cwd       DIR        3,2      4096          2 / 
- init          1    root  rtd       DIR        3,2      4096          2 / 
- init          1    root  txt       REG        3,2     32684    1200637 /sbin/init
+ init        1     root   cwd     DIR       3,2        4096          2 / 
+ init        1     root   rtd     DIR       3,2        4096          2 / 
+ init        1     root   txt     REG       3,2       32684    1200637 /sbin/init
 ```
 
-lsof 输出各列信息的意义如下 : 
+lsof 输出各列信息的意义如下 :
 
 **COMMAND** : 进程的名称
 
-**PID** : 进程标识符 
+**PID** : 进程标识符
 
-**USER** : 进程所有者 
+**USER** : 进程所有者
 
-**FD** : 文件描述符 , 应用程序通过文件描述符识别该文件 , 如 cwd、txt 等 . 
+**FD** : 文件描述符 , 应用程序通过文件描述符识别该文件 , 如 cwd、txt 等 .
 
-**TYPE** : 文件类型，如 DIR、REG 等 
+**TYPE** : 文件类型，如 DIR、REG 等
 
-**DEVICE** : 指定磁盘的名称 
+**DEVICE** : 指定磁盘的名称
 
-**SIZE** : 文件的大小 NODE：索引节点（文件在磁盘上的标识） 
+**SIZE** : 文件的大小 NODE：索引节点（文件在磁盘上的标识）
 
 **NODE NAME** : 打开文件的确切名称
 
