@@ -26,7 +26,7 @@
 nginx　　24204 24162 99 16:15 ?　　　　00:24:25 /usr/local/nginx/sbin/nginx -s
 ```
 
-Linux有硬性限制和软性限制 . 可以通过ulimit来设定这两个参数 : 
+Linux有硬性限制和软性限制 . 可以通过ulimit来设定这两个参数 :
 
 ```
 # ulimit -HSn 4096
@@ -36,13 +36,22 @@ Linux有硬性限制和软性限制 . 可以通过ulimit来设定这两个参数
 * S指定了软性大小 ; 
 * n表示设定单个进程最大的打开文件句柄数量 .
 
-设定句柄数量后 , 系统重启后又会恢复默认值 . 
+设定句柄数量后 , 系统重启后又会恢复默认值 .
 
-如果想永久保存下来 , 可以修改.bash\_profile文件 , 可以修改 /etc/profile 把上面命令加到最后 . 或者直接修改配置文件 : 
+如果想永久保存下来 , 可以修改.bash\_profile文件 , 可以修改 /etc/profile 把上面命令加到最后 . 或者直接修改配置文件 :
 
 ```
 /etc/security/limits.conf
 ```
 
-配置文件 . 
+结尾添加
+
+```
+* soft noproc 65535
+* hard noproc 65535
+* soft nofile 65535
+* hard nofile 65535
+```
+
+
 
