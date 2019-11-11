@@ -133,5 +133,13 @@ session required /lib/security/pam_limits.so
 
 > 官方的解释 : [https://access.redhat.com/solutions/406663](https://access.redhat.com/solutions/406663**)
 
-现在已经可以对进程和用户分别做资源限制了 , 看似已经足够了 , 其实不然 . 很多应用需要对整个系统的资源使用做一个总的限制 , 这时候需要修改`/proc`下的配置文件 . `/proc`目录下包含了很多系统当前状态的参数 , 例如`/proc/sys/kernel/pid_max`, `/proc/sys/net/ipv4/ip_local_port_range`等等 , 从文件的名字大致可以猜出所限制的资源种类 .
+现在已经可以对进程和用户分别做资源限制了 , 看似已经足够了 , 其实不然 . 很多应用需要对整个系统的资源使用做一个总的限制 , 这时候需要修改`/proc`下的配置文件 . `/proc`目录下包含了很多系统当前状态的参数 , 例如**`/proc/sys/kernel/pid_max`**, **`/proc/sys/net/ipv4/ip_local_port_range`**等等 , 从文件的名字大致可以猜出所限制的资源种类 . 
+
+修改了前面的配置文件 , 重现登录shell , 用`ulimit -Hn`和`ulimit -Sn`确认修改已生效 . 
+
+> 淘宝雕梁说 : 
+>
+> > 在[ ](http://www.linuxde.net/)Linux Kernel 2.6.25之前通过ulimit -n\(setrlimit\(RLIMIT\_NOFILE\)\)设置每个进程的最大打开文件句柄数不能超过NR\_OPEN \(1024\*1024\) , 也就是100多万\(除非重新编译内核\) , 而在Linux Kernel 2.6.25之后 , 内核导出了一个sys接口可以修改这个最大值\(`/proc/sys/fs/nr_open`\) . 具体的changelog[ ](http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=9cfe015aa424b3c003baba3841a60dd9b5ad319b): [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9cfe015aa424b3c003baba3841a60dd9b5ad319b](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9cfe015aa424b3c003baba3841a60dd9b5ad319b)
+
+
 
