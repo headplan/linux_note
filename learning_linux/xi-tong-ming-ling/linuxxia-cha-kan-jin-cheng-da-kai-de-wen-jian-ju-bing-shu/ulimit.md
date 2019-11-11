@@ -62,9 +62,7 @@ open files - 一个进程可打开的最大文件数
 
 max user processes - 系统允许创建的最大进程数量
 
-可以使用 ulimit -u 4096 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 .
-
-正确的修改方式是 , 修改文件
+可以使用 ulimit -u 4096 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 . 如果想永久保存下来 , 可以修改.bash\_profile文件 , 可以修改 /etc/profile 把上面命令加到最后 . 或者直接修改配置文件 : 
 
 ```
 /etc/security/limits.d/90-nproc.conf
