@@ -201,5 +201,34 @@ root       soft    nproc     unlimited
 
 #### 问题2
 
-linux 打开文件数 too many open files 解决方法 .
+linux 打开文件数 too many open files 解决方法 . 
+
+在运行某些命令或者 tomcat等服务器持续运行 一段时间后可能遇到 too many open files . 出现这句提示的原因是程序打开的文件/socket连接数量超过系统设定值 . 
+
+**java进程如果遇到java.net.SocketException: Too many open files , 接着可能导致域名解析java.net.UnknownHostException . **
+
+原因是用户进程无法打开系统文件了 . 
+
+```
+ulimit -a
+```
+
+其中open files \(-n\) 65535表示每个用户最大允许打开的文件数量是65535 . 默认是1024 . 1024很容易不够用 . 
+
+修改open files数 , 前面也提到过 , 直接修改 : 
+
+```
+vim /etc/security/limits.conf
+在最后加入  
+* soft nofile 65535 
+* hard nofile 65535  
+或者只加入
+* - nofile 65535
+```
+
+> ##### 需要注意的是如果程序是通过`supervisord`来管理的 , 也就是这进程都是 `supervisord`的子进程 , 而`supervisord`的最大文件打开数还是老的配置 , 此时必须重启 `supervisord`才可以 . 
+>
+> 也就说 , 如果遇到limits修改不生效的时候 , 请查一下进程是否只是子进程 , 如果是 , 那就要把父进程也一并重启才可以 .
+
+
 
