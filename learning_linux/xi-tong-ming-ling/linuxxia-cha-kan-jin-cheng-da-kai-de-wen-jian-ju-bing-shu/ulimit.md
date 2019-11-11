@@ -56,13 +56,13 @@ virtual memory          (kbytes, -v) unlimited   # 没有限制进程的最大�
 file locks                      (-x) unlimited   # 所能锁住的文件的最大个数没有限制。
 ```
 
-在上述参数中 , 关注的比较多的是 : 
+在上述参数中 , 关注的比较多的是 :
 
 open files - 一个进程可打开的最大文件数
 
 max user processes - 系统允许创建的最大进程数量
 
-可以使用 ulimit -u 4096 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 . 
+可以使用 ulimit -u 4096 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 .
 
 正确的修改方式是 , 修改文件
 
@@ -76,5 +76,14 @@ max user processes - 系统允许创建的最大进程数量
 /etc/security/limits.conf
 ```
 
-soft表示软限制 , hard表示硬限制 , nproc进程数 , nofile文件数 . 
+soft表示软限制 , hard表示硬限制 , nproc进程数 , nofile文件数 .
+
+```
+* soft noproc 65535
+* hard noproc 65535
+* soft nofile 65535
+* hard nofile 65535
+```
+
+
 
