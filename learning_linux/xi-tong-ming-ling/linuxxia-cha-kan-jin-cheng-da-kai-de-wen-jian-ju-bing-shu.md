@@ -45,18 +45,6 @@ Linux中 , 单个进程能够打开的最大文件句柄数量是可以配置的
 ulimit -a
 ```
 
-**查看当前系统打开的文件数量**
-
-```
-lsof | wc -l
-```
-
-**查看当前进程的打开文件数量**
-
-```
-lsof -p pid | wc -l
-```
-
 **查看当前进程打开了多少句柄数**
 
 ```
@@ -121,30 +109,27 @@ lsof 输出各列信息的意义如下 :
 
 **NAME** : 打开文件的确切名称
 
-在 Linux 系统中可以用 man lsof 查看详细的介绍和参数使用方法，在这里不作过多介绍。在侦测程序句柄泄露的应用中，我们主要用到 lsof 的如下使用方法：
+在 Linux 系统中可以用 man lsof 查看详细的介绍和参数使用方法 , 具体查看下面的lsof详解 . 在侦测程序句柄泄露的应用中 , 主要用到 lsof 的如下使用方法 : 
 
 ```
-lsof
- – p PID
+lsof -p PID | wc -l
 ```
 
-PID 是指我们要侦测程序的进程号，可以用命令 ps – ef 来得到。我们以进程号 14946 为例：
+PID 是指我们要侦测程序的进程号 , 可以用命令 ps – ef 来得到 . 以进程号 14946 为例 : 
 
 ```
-#
- lsof -p 14946 
+lsof -p 14946
 
- COMMAND     PID USER   FD   TYPE  DEVICE     SIZE   NODE NAME 
- rpc.rquot 14946 root  cwd    DIR     3,2     4096      2 / 
- rpc.rquot 14946 root  rtd    DIR     3,2     4096      2 / 
- rpc.rquot 14946 root txt REG 3,2 65292 267543 
- /usr/sbin/rpc.rquotad 
- rpc.rquot 14946 root mem REG 3,2 45889 535442 
- /lib/libnss_files-2.3.4.so 
- rpc.rquot 14946 root mem REG 3,2 1454802 541622 /lib/tls/ 
- libc-2.3.4.so 
-……
+COMMAND     PID USER   FD   TYPE  DEVICE     SIZE   NODE NAME 
+rpc.rquot 14946 root  cwd    DIR     3,2     4096      2 / 
+rpc.rquot 14946 root  rtd    DIR     3,2     4096      2 / 
+rpc.rquot 14946 root txt REG 3,2 65292 267543 
+/usr/sbin/rpc.rquotad 
+rpc.rquot 14946 root mem REG 3,2 45889 535442 
+/lib/libnss_files-2.3.4.so 
+rpc.rquot 14946 root mem REG 3,2 1454802 541622 /lib/tls/ 
+libc-2.3.4.so 
 ```
 
-每一行就代表该进程正在使用的一个文件，即句柄。统计行数总和就是该进程打开的所有句柄数量，这为我们用统计方法侦测句柄泄露提供的依据。
+每一行就代表该进程正在使用的一个文件 , 即句柄 . 统计行数总和就是该进程打开的所有句柄数量 , 这为用统计方法侦测句柄泄露提供的依据 . 
 
