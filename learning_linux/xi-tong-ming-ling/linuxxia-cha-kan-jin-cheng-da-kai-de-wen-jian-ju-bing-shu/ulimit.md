@@ -159,22 +159,22 @@ session required /lib/security/pam_limits.so
 通过`ulimit -a`得到结果
 
 ```
-core file size          (blocks, -c) 0
-data seg size           (kbytes, -d) unlimited
-scheduling priority             (-e) 0
-file size               (blocks, -f) unlimited
-pending signals                 (-i) 63463
-max locked memory       (kbytes, -l) 64
-max memory size         (kbytes, -m) unlimited
-open files                      (-n) 65535
-pipe size            (512 bytes, -p) 8
-POSIX message queues     (bytes, -q) 819200
-real-time priority              (-r) 0
-stack size              (kbytes, -s) 8192
-cpu time               (seconds, -t) unlimited
-max user processes              (-u) 4096
-virtual memory          (kbytes, -v) unlimited
-file locks                      (-x) unlimited
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 63463
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 65535
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
 ```
 
 **查看参数**
@@ -187,7 +187,7 @@ file locks                      (-x) unlimited
 24001
 ```
 
-这个得到的线程数竟然是2万多 , 远远超过4096 . 可以使用 ulimit -u 20000 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 . 根据前面内容 , 修改**/etc/security/limits.d/20-nproc.conf**的配置文件 : 
+这个得到的线程数竟然是2万多 , 远远超过4096 . 可以使用 ulimit -u 20000 修改max user processes的值 , 但是只能在当前终端的这个session里面生效 , 重新登录后仍然是使用系统默认值 . 根据前面内容 , 修改**/etc/security/limits.d/20-nproc.conf**的配置文件 :
 
 ```
 [root@JD sys]# cat /etc/security/limits.d/20-nproc.conf_bk
@@ -195,13 +195,11 @@ file locks                      (-x) unlimited
 # accidental fork bombs.
 # See rhbz #432903 for reasoning.
 
-*          soft    nproc     4096
+*          soft    nproc     8192
 root       soft    nproc     unlimited
 ```
 
 #### 问题2
 
-linux 打开文件数 too many open files 解决方法 . 
-
-
+linux 打开文件数 too many open files 解决方法 .
 
