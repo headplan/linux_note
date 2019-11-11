@@ -50,6 +50,7 @@
     * [grep](learning_linux/xi-tong-ming-ling/grep.md)
     * [scp](learning_linux/xi-tong-ming-ling/scp.md)
     * [watch](learning_linux/xi-tong-ming-ling/watch.md)
+    * [Linux下查看进程打开的文件句柄数](learning_linux/xi-tong-ming-ling/linuxxia-cha-kan-jin-cheng-da-kai-de-wen-jian-ju-bing-shu.md)
   * [软件工具](learning_linux/ruan-jian-gong-ju.md)
     * [nmap](learning_linux/ruan-jian-gong-ju/nmap.md)
     * [ctags](learning_linux/ruan-jian-gong-ju/ctags.md)
