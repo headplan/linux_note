@@ -131,7 +131,7 @@ COMMAND     PID    USER   FD      TYPE     DEVICE      SIZE       NODE NAME
 lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 ```
 
-**使用`-i`显示所有连接**
+**使用**`-i`**显示所有连接**
 
 ```
 # lsof -i
@@ -207,7 +207,7 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 
 **杀死指定用户所做的一切事**
 
-可以消灭指定用户运行的所有东西 . 
+可以消灭指定用户运行的所有东西 .
 
 ```
 # kill -9 'lsof -t -u xiaoming'
@@ -215,7 +215,11 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 
 #### 命令和进程
 
+**使用-c查看指定的命令正在使用的文件和网络连接**
 
+```
+# lsof -c syslog-ng
+```
 
 #### 文件和目录
 
