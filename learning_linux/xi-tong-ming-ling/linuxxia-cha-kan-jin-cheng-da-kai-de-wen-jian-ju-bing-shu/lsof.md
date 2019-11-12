@@ -221,7 +221,33 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 # lsof -c syslog-ng
 ```
 
+**使用-p查看指定进程ID已打开的内容**
+
+```
+# lsof -p 10075
+```
+
+**-t选项只返回PID**
+
+```
+# lsof -t -c Mail
+```
+
 #### 文件和目录
+
+通过查看指定文件或目录 , 可以看到系统上所有正与其交互的资源 , 包括用户、进程等 . 
+
+**显示与指定目录交互的所有一切**
+
+```
+# lsof /var/log/messages/
+```
+
+**显示与指定文件交互的所有一切**
+
+```
+# lsof /home/daniel/firewall_whitelist.txt
+```
 
 
 
