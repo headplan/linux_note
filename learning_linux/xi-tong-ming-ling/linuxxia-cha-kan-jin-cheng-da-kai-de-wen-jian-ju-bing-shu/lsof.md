@@ -235,7 +235,7 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 
 #### 文件和目录
 
-通过查看指定文件或目录 , 可以看到系统上所有正与其交互的资源 , 包括用户、进程等 . 
+通过查看指定文件或目录 , 可以看到系统上所有正与其交互的资源 , 包括用户、进程等 .
 
 **显示与指定目录交互的所有一切**
 
@@ -246,7 +246,7 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 **显示与指定文件交互的所有一切**
 
 ```
-# lsof /home/daniel/firewall_whitelist.txt
+# lsof /home/www/access.log
 ```
 
 
