@@ -249,5 +249,15 @@ lsof -i[46] [protocol][@hostname|hostaddr][:service|port]
 # lsof /home/www/access.log
 ```
 
+#### 组合用法
+
+**显示用户www连接到127.0.0.1所做的一切**
+
+```
+# lsof -u www -i @127.0.0.1
+```
+
+同时使用-t和-c选项以给进程发送HUP信号
+
 
 
