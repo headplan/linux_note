@@ -44,11 +44,11 @@ Systemd 的优点是功能强大 , 使用方便 , 缺点是体系庞大 , 非常
 
 #### 系统管理
 
-Systemd 并不是一个命令 , 而是一组命令 , 涉及到系统管理的方方面面 . 
+Systemd 并不是一个命令 , 而是一组命令 , 涉及到系统管理的方方面面 .
 
 ##### systemctl
 
-`systemctl`是Systemd的主命令 , 用于管理系统 . 
+`systemctl`是Systemd的主命令 , 用于管理系统 .
 
 ```
 # 重启系统
@@ -75,7 +75,7 @@ $ sudo systemctl rescue
 
 ##### systemd-analyze
 
-`systemd-analyze`命令用于查看启动耗时 . 
+`systemd-analyze`命令用于查看启动耗时 .
 
 ```
 # 查看启动耗时
@@ -150,9 +150,9 @@ $ loginctl show-user headplan
 
 #### Unit
 
-Systemd可以管理所有系统资源 . 不同的资源统称为Unit\(单位\) . 
+Systemd可以管理所有系统资源 . 不同的资源统称为Unit\(单位\) .
 
-Unit一共分成12种 : 
+Unit一共分成12种 :
 
 * Service unit : 系统服务
 * Target unit : 多个 Unit 构成的一个组
@@ -166,6 +166,29 @@ Unit一共分成12种 :
 * Socket Unit : 进程间通信的 socket
 * Swap Unit : swap 文件
 * Timer Unit : 定时器
+
+`systemctl list-units`命令可以查看当前系统的所有Unit
+
+```
+# 列出正在运行的 Unit
+$ systemctl list-units
+
+# 列出所有Unit，包括没有找到配置文件的或者启动失败的
+$ systemctl list-units --all
+
+# 列出所有没有运行的 Unit
+$ systemctl list-units --all --state=inactive
+
+# 列出所有加载失败的 Unit
+$ systemctl list-units --failed
+
+# 列出所有正在运行的、类型为 service 的 Unit
+$ systemctl list-units --type=service
+```
+
+##### Unit 的状态
+
+`systemctl status`命令用于查看系统状态和单个Unit的状态 . 
 
 **相关连接**
 
