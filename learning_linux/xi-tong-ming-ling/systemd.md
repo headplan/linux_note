@@ -249,11 +249,14 @@ $ sudo systemctl set-property httpd.service CPUShares=500
 
 ##### 依赖关系
 
-Unit之间存在依赖关系 . 假如 , A依赖于B , 就意味着Systemd在启动A的时候 , 同时会启动B . 
+Unit之间存在依赖关系 . 假如 , A依赖于B , 就意味着Systemd在启动A的时候 , 同时会启动B .
 
 ```
 # 列出一个Unit的所有依赖
+$ systemctl list-dependencies nginx.service
 
+# 列出一个Unit的所有依赖,包括Target类型依赖
+$ systemctl list-dependencies --all nginx.service
 ```
 
 **相关连接**
