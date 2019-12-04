@@ -188,7 +188,64 @@ $ systemctl list-units --type=service
 
 ##### Unit 的状态
 
-`systemctl status`命令用于查看系统状态和单个Unit的状态 . 
+`systemctl status`命令用于查看系统状态和单个Unit的状态 .
+
+```
+# 显示系统状态
+$ systemctl status
+
+# 显示单个Unit的状态
+$ systemctl status bluetooth.service
+
+# 显示远程主机的某个Unit的状态
+$ systemctl -H root@rhel7.example.com status httpd.service
+```
+
+除了`status`命令 , `systemctl`还提供了三个查询状态的简单方法 , 主要供脚本内部的判断语句使用 . 
+
+```
+# 显示某个Unit是否正在运行
+$ systemctl is-active application.service
+
+# 显示某个Unit是否处于启动失败状态
+$ systemctl is-failed application.service
+
+# 显示某个Unit服务是否建立了启动链接
+$ systemctl is-enabled application.service
+```
+
+#### Unit 管理
+
+对于用户来说 , 还是类似启动 , 重启一个服务的命令比较常用  : 
+
+```
+# 立即启动一个服务
+$ sudo systemctl start apache.service
+
+# 立即停止一个服务
+$ sudo systemctl stop apache.service
+
+# 重启一个服务
+$ sudo systemctl restart apache.service
+
+# 杀死一个服务的所有子进程
+$ sudo systemctl kill apache.service
+
+# 重新加载一个服务的配置文件
+$ sudo systemctl reload apache.service
+
+# 重载所有修改过的配置文件
+$ sudo systemctl daemon-reload
+
+# 显示某个Unit的所有底层参数
+$ systemctl show httpd.service
+
+# 显示某个Unit的指定属性的值
+$ systemctl show -p CPUShares httpd.service
+
+# 设置某个Unit的指定属性
+$ sudo systemctl set-property httpd.service CPUShares=500
+```
 
 **相关连接**
 
