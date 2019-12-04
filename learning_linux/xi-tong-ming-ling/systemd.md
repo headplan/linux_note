@@ -201,7 +201,7 @@ $ systemctl status bluetooth.service
 $ systemctl -H root@rhel7.example.com status httpd.service
 ```
 
-除了`status`命令 , `systemctl`还提供了三个查询状态的简单方法 , 主要供脚本内部的判断语句使用 . 
+除了`status`命令 , `systemctl`还提供了三个查询状态的简单方法 , 主要供脚本内部的判断语句使用 .
 
 ```
 # 显示某个Unit是否正在运行
@@ -214,9 +214,9 @@ $ systemctl is-failed application.service
 $ systemctl is-enabled application.service
 ```
 
-#### Unit 管理
+##### Unit 管理
 
-对于用户来说 , 还是类似启动 , 重启一个服务的命令比较常用  : 
+对于用户来说 , 还是类似启动 , 重启一个服务的命令比较常用  :
 
 ```
 # 立即启动一个服务
@@ -245,6 +245,15 @@ $ systemctl show -p CPUShares httpd.service
 
 # 设置某个Unit的指定属性
 $ sudo systemctl set-property httpd.service CPUShares=500
+```
+
+##### 依赖关系
+
+Unit之间存在依赖关系 . 假如 , A依赖于B , 就意味着Systemd在启动A的时候 , 同时会启动B . 
+
+```
+# 列出一个Unit的所有依赖
+
 ```
 
 **相关连接**
