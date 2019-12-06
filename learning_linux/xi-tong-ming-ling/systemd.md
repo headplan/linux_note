@@ -148,7 +148,7 @@ $ loginctl list-users
 $ loginctl show-user headplan
 ```
 
-#### Unit
+#### Unit\(单位,单元\)
 
 Systemd可以管理所有系统资源 . 不同的资源统称为Unit\(单位\) .
 
@@ -247,7 +247,7 @@ $ systemctl show -p CPUShares httpd.service
 $ sudo systemctl set-property httpd.service CPUShares=500
 ```
 
-##### 依赖关系
+##### Unit的依赖关系
 
 Unit之间存在依赖关系 . 假如 , A依赖于B , 就意味着Systemd在启动A的时候 , 同时会启动B .
 
@@ -258,6 +258,36 @@ $ systemctl list-dependencies nginx.service
 # 列出一个Unit的所有依赖,包括Target类型依赖
 $ systemctl list-dependencies --all nginx.service
 ```
+
+#### Unit的配置文件
+
+每一个 Unit 都有一个配置文件 , 告诉 Systemd 怎么启动这个 Unit . 
+
+Systemd 默认从目录`/etc/systemd/system/`读取配置文件 . 但是 , 里面存放的大部分文件都是符号链接 , 指向目录`/usr/lib/systemd/system/`, 真正的配置文件存放在这个目录 . 
+
+`systemctl enable`命令用于在上面两个目录之间 , 建立符号链接关系 . 
+
+```
+$ sudo systemctl enable clamd@scan.service
+# 等同于
+$ sudo ln -s '/usr/lib/systemd/system/clamd@scan.service' '/etc/systemd/system/multi-user.target.wants/clamd@scan.service'
+```
+
+如果配置文件里面设置了开机启动 , systemctl enable命令相当于激活开机启动 . 
+
+与之对应的 , `systemctl disable`命令用于在两个目录之间 , 撤销符号链接关系 , 相当于撤销开机启动 . 
+
+```
+$ sudo systemctl disable clamd@scan.service
+```
+
+配置文件的后缀名 , 就是该 Unit 的种类 , 比如`sshd.socket` . 如果省略 , Systemd 默认后缀名为`.service` , 所以`sshd`会被理解成`sshd.service` . 
+
+##### 配置文件的状态
+
+`systemctl list-unit-files`命令用于列出所有配置文件 . 
+
+
 
 **相关连接**
 
