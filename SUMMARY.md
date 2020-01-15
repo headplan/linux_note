@@ -115,4 +115,5 @@
     * [brew](macos/chang-yong-gong-ju/brew.md)
   * [常见错误](macos/chang-jian-cuo-wu.md)
   * [文档显示图标和软件图标不一致](macos/wen-dang-xian-shi-tu-biao-he-ruan-jian-tu-biao-bu-yi-zhi.md)
+  * [服务管理launchctl](macos/kai-ji-qi-dong.md)
 
