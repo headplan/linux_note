@@ -28,7 +28,9 @@ Reason: image not found Abort trap: 6
 
 ```
 wget -c http://www.ijg.org/files/jpegsrc.v8d.tar.gz
+./configure
+make
 ```
 
-其他步骤同上 . 
+其他步骤同上 .
 
