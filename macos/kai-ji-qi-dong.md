@@ -1,18 +1,18 @@
 # 服务管理launchctl
 
-launchctl是一个统一的服务管理框架 , 可以启动、停止和管理守护进程、应用程序、进程和脚本等 . launchctl是通过配置文件来指定执行周期和任务的 . 
+launchctl是一个统一的服务管理框架 , 可以启动、停止和管理守护进程、应用程序、进程和脚本等 . launchctl是通过配置文件来指定执行周期和任务的 .
 
 > 当然mac也可以像linux系统一样 , 使用crontab命令来添加定时任务 .
 
 ### 编写plist文件
 
-launchctl 将根据plist文件的信息来启动任务 . plist脚本一般存放在以下目录 : 
+launchctl 将根据plist文件的信息来启动任务 . plist脚本一般存放在以下目录 :
 
-`/Library/LaunchDaemons` - 只要系统启动了 , 哪怕用户不登陆系统也会被执行 . 
+`/Library/LaunchDaemons` - 只要系统启动了 , 哪怕用户不登陆系统也会被执行 .
 
-`/Library/LaunchAgents` - 当用户登陆系统后才会被执行 . 
+`/Library/LaunchAgents` - 当用户登陆系统后才会被执行 .
 
-更多的plist存放目录 : 
+更多的plist存放目录 :
 
 ```
 ~/Library/LaunchAgents 由用户自己定义的任务项
@@ -55,13 +55,49 @@ launchctl 将根据plist文件的信息来启动任务 . plist脚本一般存放
 </plist>
 ```
 
+plist文件中的关键字可以在[苹果官方文档](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html#//apple_ref/doc/man/5/launchd.plist)找到 , 值得注意的是`Label`对应的值需要保证唯一性 , 作为任务的唯一标示 . 可以使用如下命令来验证plist格式的正确性\(不代表命令有效\) : 
+
+```
+$ plutil-lint /Users/denglibing/Library/LaunchAgents/com.demo.plist
+```
+
+#### plist部分参数说明
+
+* Label : 对应的需要保证全局唯一性
+* Program : 要运行的程序
+* ProgramArguments : 命令语句
+* StartCalendarInterval : 运行的时间 , 单个时间点使用dict , 多个时间点使用 array &lt;dict&gt;
+* StartInterval：时间间隔 , 与StartCalendarInterval使用其一 , 单位为秒
+* StandardInPath、StandardOutPath、StandardErrorPath : 标准的输入输出错误文件 , 这里建议不要使用 .log 作为后缀 , 会打不开里面的信息 . 
+
+> 定时启动任务时 , 如果涉及到网络 , 但是电脑处于睡眠状态是执行不了的 , 这个时候可以定时的启动屏幕就好了 .
+
+#### plist支持两种方式配置执行时间
+
+StartInterval : 指定脚本每间隔多长时间\(单位:秒\)执行一次 . 
+
+StartCalendarInterval : 可以指定脚本在多少分钟、小时、天、星期几、月时间上执行 , 类似如crontab的中的设置 , 包含下面的key : 
+
+```
+Minute <integer>
+The minute on which this job will be run.
+Hour <integer>
+The hour on which this job will be run.
+Day <integer>
+The day on which this job will be run.
+Weekday <integer>
+The weekday on which this job will be run (0 and 7 are Sunday).
+Month <integer>
+The month on which this job will be run.
+```
+
 ### 加载命令
 
 ```
 launchctl load -w com.demo.plist
 ```
 
-这样任务就加载成功了 . 更多的命令 : 
+这样任务就加载成功了 . 更多的命令 :
 
 ```
 # 加载任务,-w选项会将plist文件中无效的key覆盖掉,建议加上
