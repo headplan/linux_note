@@ -19,5 +19,23 @@ make
 make install
 ```
 
+#### CPU密集型进程
+
+```
+# 模拟CPU使用率100%的场景
+stress --cpu 1 --timeout 600
+
+# 查看平均负载
+watch -d uptime
+
+# 查看CPU使用率的变化
+# -P ALL 表示监控所有 CPU,后面数字 5 表示间隔 5 秒后输出一组数据
+mpstat -P ALL 5
+```
+
+#### I/O密集型进程
+
+#### 大量进程场景
+
 
 
