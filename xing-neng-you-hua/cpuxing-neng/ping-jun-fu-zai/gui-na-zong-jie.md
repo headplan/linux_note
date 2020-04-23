@@ -1,7 +1,7 @@
 # 归纳总结
 
 ```
-uptime # 平均负载
+uptime # 平均负载:1分钟,5分钟,15分钟
 grep 'model name' /proc/cpuinfo | wc -l # CPU数
 
 # Linux系统压力测试工具
@@ -36,8 +36,6 @@ mpstat -P ALL 5
 #### I/O密集型进程
 
 #### 大量进程场景
-
-
 
 
 
